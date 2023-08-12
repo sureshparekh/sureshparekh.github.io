@@ -4,7 +4,7 @@
 ####################################
 #
 title: Home  
-description: "Astrophysics graduate student and a philosopher of science."
+description: "Master's in Physics with specialization in Astrophysics. Curious Wanderer. A physics postgraduate with a specialization in astrophysics, my expertise is centred around Active Galactic Nuclei (AGNs). Proficient in blending simulations with observational insights, I passionately explore the wonders of the cosmos through computational astrophysics, driven by an unwavering curiosity. "
 keywords: Suresh, sureshparekh, blog, jekyll, gh-pages, github, wordpress
 baseurl:  '' # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://sureshparekh.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
@@ -87,7 +87,7 @@ author:  # change following line to your infomation.
 # analytics
 ## google analytics
 ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-#  id: UA-93473370-3
+ id: G-ZKB132QR4F
 
 ## google optimize
 go:
