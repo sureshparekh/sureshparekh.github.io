@@ -47,7 +47,7 @@
     detail: Pune University and IUCAA
 
   desc:
-    detail: Master&#39;s Student
+    detail:
 
   date:
     detail: November, 2021 - June, 2023
@@ -58,10 +58,10 @@
   present: false
 
 - name:
-    detail: St. Xavier&#39;s College, Ahmedabad
+    detail: St. Xaviers College, Ahmedabad
 
   desc:
-    detail: Bachleor&#39;s Student
+    detail: 
 
   date:
     detail: June, 2018 - July, 2021
