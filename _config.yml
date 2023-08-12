@@ -11,9 +11,9 @@ url: https://sureshparekh.github.io  # url should be 'http://<github_username>.g
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 #
-###################################
+#####################################
 # Jekyll configuration
-####################################
+#####################################
 #
 timezone: Asia/Kolkata
 highlighter: rouge
