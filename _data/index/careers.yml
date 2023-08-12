@@ -13,6 +13,18 @@
   icon: fa-plus-square
   present: true
 
+- name:
+    detail: GLA University, Mathura
+
+  desc:
+    detail: Research Intern in Observational Cosmology
+
+  date:
+    detail: June, 2021 - Present
+  job:
+    detail: Research Intern
+
+  icon: fa-plus-square
 
 
 - name:
@@ -56,16 +68,5 @@
 
   icon: fa-plus-square
 
-- name:
-    detail: St. Xavier's College, Ahmedabad
 
-  desc:
-    detail: 
-
-  date:
-    detail: June, 2018 - July, 2021
-  job:
-    detail: B.Sc. Physics
-
-  icon: fa-plus-square
   
