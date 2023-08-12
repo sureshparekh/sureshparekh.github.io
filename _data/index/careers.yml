@@ -16,7 +16,7 @@
 
 
 - name:
-    detail: Inter-University Centre for Astronomy and Astrophysics
+    detail: Inter-University Centre for Astronomy and Astrophysics (IUCAA)
 
   desc:
     detail: 
@@ -30,15 +30,15 @@
   present: false
 
 - name:
-    detail: Stellar Universe
+    detail: Savitribai Phule Pune University
 
   desc:
-    detail: Founder
+    detail: with specialization in Astrophysics from IUCAA
 
   date:
-    detail: November, 2017 - present
+    detail: August, 2021 - June, 2023
   job:
-    detail: Student organisation for astronomy and astrophysics outreach activities
+    detail: MSc. Physics
 
   icon: fa-plus-square
   present: true
