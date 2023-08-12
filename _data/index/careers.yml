@@ -1,14 +1,14 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Max-Planck-Institute for Radio Astronomy
+    detail: National Radio Astronomy Observatory
 
   desc:
     detail: 
   date:
-    detail: July, 2023 - Present
+    detail: August, 2023 - Present
   job:
-    detail: Ph.D (Theoretical Astrophysics)
+    detail: Research Intern
 
   icon: fa-plus-square
   present: true
@@ -16,29 +16,29 @@
 
 
 - name:
-    detail: P.D. Patel Institute of Applied Sciences, Charusat University, Gujarat, India
+    detail: GLA University
 
   desc:
     detail: 
 
   date:
-    detail: September, 2021 - Present
+    detail: June, 2023 - Present
   job:
-    detail: M.Sc Physics (Specialisation in Astrophysics and Cosmology)
+    detail: Research Intern in Observational Cosmology
 
   icon: fa-plus-square
-  present: false
+  present: true
 
 - name:
-    detail: Stellar Universe
+    detail: Pune University and IUCAA
 
   desc:
-    detail: Founder
+    detail: MSc. Physics and specialization in Astrophysics
 
   date:
-    detail: November, 2017 - present
+    detail: November, 2021 - June, 2023
   job:
-    detail: Student organisation for astronomy and astrophysics outreach activities
+    detail: MSc. Physics and specialization in Astrophysics
 
   icon: fa-plus-square
   present: true
