@@ -1,14 +1,14 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Max-Planck-Institute for Radio Astronomy
+    detail: National Radio Astronomy Observatory (NRAO)
 
   desc:
     detail: 
   date:
-    detail: July, 2023 - Present
+    detail: August, 2023 - Present
   job:
-    detail: Ph.D (Theoretical Astrophysics)
+    detail: Research Intern
 
   icon: fa-plus-square
   present: true
@@ -16,43 +16,43 @@
 
 
 - name:
-    detail: P.D. Patel Institute of Applied Sciences, Charusat University, Gujarat, India
+    detail: Inter-University Centre for Astronomy and Astrophysics (IUCAA)
 
   desc:
-    detail: 
+    detail: Project title: Extended X-Ray Jets in Radio-loud Quasars: A Morphological Study.
 
   date:
-    detail: September, 2021 - Present
+    detail: August, 2022 - May, 2023
   job:
-    detail: M.Sc Physics (Specialisation in Astrophysics and Cosmology)
+    detail: Project Intern
 
   icon: fa-plus-square
   present: false
 
 - name:
-    detail: Stellar Universe
+    detail: Savitribai Phule Pune University
 
   desc:
-    detail: Founder
+    detail: with specialization in Astrophysics from IUCAA
 
   date:
-    detail: November, 2017 - present
+    detail: August, 2021 - June, 2023
   job:
-    detail: Student organisation for astronomy and astrophysics outreach activities
+    detail: MSc. Physics
 
   icon: fa-plus-square
   present: true
 
 - name:
-    detail: University of Delhi
+    detail: St. Xaviers College, Ahmedabad
 
   desc:
     detail: 
 
   date:
-    detail: July, 2017 - August, 2020
+    detail: June, 2018 - July, 2021
   job:
-    detail: B.Sc. Physics Hons.
+    detail: B.Sc. Physics
 
   icon: fa-plus-square
   
