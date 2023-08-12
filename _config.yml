@@ -60,10 +60,10 @@ author:  # change following line to your infomation.
   name: Suresh Parekh # Be used at blog posts' author.
   first_name: Suresh  # Be used at index page about me section.
   last_name: Parekh  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/my_pic.jpg  # upload your avatar at directory and edit it.
-  github_username: Relativist1  # Leave blank if you don't have now
+  avatar: static/assets/img/landing/DP.png  # upload your avatar at directory and edit it.
+  github_username: sureshparekh  # Leave blank if you don't have now
   linkedin_id:  # Leave blank if you don't have now
-  facebook_username: saurabh.cosmos  # Leave blank if you don't have now
+  facebook_username:   # Leave blank if you don't have now
   twitter: 
   email: sureshparekh8412@gmail.com  # Leave blank if you don't have now
   cv: https://relativist1.github.ip/static/assets/cv/CV_academia.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
