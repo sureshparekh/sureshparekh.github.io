@@ -25,41 +25,41 @@
   tpl: skills.html
   css: team
 
-- id: stellar
-  i18n: nav.stellar
-  name: Stellar Universe
-  tpl: stellar.html
-  page: stellar/
+# - id: stellar
+#   i18n: nav.stellar
+#   name: Stellar Universe
+#   tpl: stellar.html
+#   page: stellar/
 
-- id: simulations
-  i18n: nav.simulations
-  name: Simulations
-  tpl: simulations.html
-  page: simulations/
+# - id: simulations
+#   i18n: nav.simulations
+#   name: Simulations
+#   tpl: simulations.html
+#   page: simulations/
 
-- id: brahma
-  i18n: nav.brahma
-  name: Brahma
-  tpl: brahma.html
-  page: brahma/
+# - id: brahma
+#   i18n: nav.brahma
+#   name: Brahma
+#   tpl: brahma.html
+#   page: brahma/
 
-- id: Gallifray
-  i18n: nav.gallifray
-  name: Gallifray
-  tpl: gallifray.html
-  page: gallifray/
+# - id: Gallifray
+#   i18n: nav.gallifray
+#   name: Gallifray
+#   tpl: gallifray.html
+#   page: gallifray/
 
-- id: publications
-  i18n: nav.publications
-  name: Publications
-  tpl: pubs.html
-  page: publications/
+# - id: publications
+#   i18n: nav.publications
+#   name: Publications
+#   tpl: pubs.html
+#   page: publications/
 
-- id: blog
-  i18n: nav.blog
-  name: Blog
-  tpl: blog.html
-  page: blog/
+# - id: blog
+#   i18n: nav.blog
+#   name: Blog
+#   tpl: blog.html
+#   page: blog/
 
 #  css: testimonials navy-section
 
