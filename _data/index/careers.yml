@@ -13,6 +13,20 @@
   icon: fa-plus-square
   present: true
 
+- name:
+    detail: GLA University
+
+  desc:
+    detail: Observational Cosmology
+
+  date:
+    detail: June, 2023 - Present
+  job:
+    detail: Research Intern
+
+  icon: fa-plus-square
+  present: true
+
 
 - name:
     detail: Inter-University Centre for Astronomy and Astrophysics (IUCAA)
