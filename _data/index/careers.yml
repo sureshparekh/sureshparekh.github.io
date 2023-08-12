@@ -55,18 +55,18 @@
   icon: fa-plus-square
   present: true
 
-- name:
-    detail: St. Xavier's College, Ahmedabad
+# - name:
+#     detail: St. Xavier's College, Ahmedabad
 
-  desc:
-    detail: 
+#   desc:
+#     detail: 
 
-  date:
-    detail: June, 2018 - July, 2021
-  job:
-    detail: B.Sc. Physics
+#   date:
+#     detail: June, 2018 - July, 2021
+#   job:
+#     detail: B.Sc. Physics
 
-  icon: fa-plus-square
+#   icon: fa-plus-square
 
 
   
