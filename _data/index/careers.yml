@@ -44,15 +44,15 @@
   present: true
 
 - name:
-    detail: University of Delhi
+    detail: St. Xavier's College, Ahmedabad
 
   desc:
     detail: 
 
   date:
-    detail: July, 2017 - August, 2020
+    detail: June, 2018 - July, 2021
   job:
-    detail: B.Sc. Physics Hons.
+    detail: B.Sc. Physics
 
   icon: fa-plus-square
   
