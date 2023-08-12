@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Python, Fortran, Latex, Sleeping
-percentage: 95, 70, 60, 40
+aspects: Python, C++, Mathematica, CASA, Fortran
+percentage: 95, 90, 85, 40, 40
