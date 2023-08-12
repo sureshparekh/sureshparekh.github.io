@@ -41,7 +41,7 @@
     detail: MSc. Physics
 
   icon: fa-plus-square
-  present: true
+  present: false
 
 - name:
     detail: St. Xaviers College, Ahmedabad
