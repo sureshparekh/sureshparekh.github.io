@@ -66,7 +66,7 @@ author:  # change following line to your infomation.
   facebook_username:   # Leave blank if you don't have now
   twitter: 
   email: sureshparekh8412@gmail.com  # Leave blank if you don't have now
-  cv: https://relativist1.github.ip/static/assets/cv/CV_academia.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
+  cv: static/assets/cv/CV_Parekh.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
 
 
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
@@ -74,13 +74,10 @@ author:  # change following line to your infomation.
     - name: fa-paper-plane-o
     - name: fa-linux
   skill_icon2:
-    - name: fa-apple
+    - name: icon-ubuntu
     - name: fa-code
-  desc: "Astrophysics graduate student, Philosophy of Science, Science Communicator. 
-        I work on Black hole shadows, accretion modelling and imaging from both which includes both, 
-        theoretical and numerical perspective (General Relativity + Astrophysics + Radio Astronomy). 
-        My current research interests are testing general relativity and other compact objects with shadow imaging, 
-        and modelling X-ray binaries as potential VLBI targets."
+  desc: "Master's in Physics with specialization in Astrophysics, Curious Wanderer, Science Communicator. 
+        A physics postgraduate with a specialization in astrophysics, my expertise is centered around Active Galactic Nuclei (AGNs). Proficient in blending simulations with observational insights, I passionately explore the wonders of the cosmos through computational astrophysics, driven by an unwavering curiosity."
 
 
 # comment
