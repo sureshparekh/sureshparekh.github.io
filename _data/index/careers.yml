@@ -14,46 +14,46 @@
   present: true
 
 
-# - name:
-#     detail: Inter-University Centre for Astronomy and Astrophysics (IUCAA)
+- name:
+    detail: Inter-University Centre for Astronomy and Astrophysics (IUCAA)
 
-#   desc:
-#     detail: 
+  desc:
+    detail: 
 
-#   date:
-#     detail: August, 2022 - May, 2023
-#   job:
-#     detail: Research Intern
+  date:
+    detail: August, 2022 - May, 2023
+  job:
+    detail: Research Intern
 
-#   icon: fa-plus-square
-#   present: false
+  icon: fa-plus-square
+  present: false
 
-# - name:
-#     detail: Savitribai Phule Pune University
+- name:
+    detail: Savitribai Phule Pune University
 
-#   desc:
-#     detail: 
+  desc:
+    detail: 
 
-#   date:
-#     detail: August, 2021 - June, 2023
-#   job:
-#     detail: MSc. Physics
+  date:
+    detail: August, 2021 - June, 2023
+  job:
+    detail: MSc. Physics
 
-#   icon: fa-plus-square
-#   present: true
+  icon: fa-plus-square
+  present: true
 
-# - name:
-#     detail: St. Xavier's College, Ahmedabad
+- name:
+    detail: St. Xavier's College, Ahmedabad
 
-#   desc:
-#     detail: 
+  desc:
+    detail: 
 
-#   date:
-#     detail: June, 2018 - July, 2021
-#   job:
-#     detail: B.Sc. Physics
+  date:
+    detail: June, 2018 - July, 2021
+  job:
+    detail: B.Sc. Physics
 
-#   icon: fa-plus-square
+  icon: fa-plus-square
 
 
   
