@@ -1,0 +1,6 @@
+# skills section data
+
+label: Ability
+id : cs
+aspects: Python, C++, Mathematica, CASA, Fortran
+percentage: 95, 90, 85, 40, 40
