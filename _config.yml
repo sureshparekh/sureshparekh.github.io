@@ -3,11 +3,11 @@
 # Site wide configuration
 ####################################
 #
-title: Home  
+title: Suresh  
 description: "Astrophysics graduate student and a philosopher of science."
-keywords: Saurabh, relativist1, blog, jekyll, gh-pages, github, wordpress
+keywords: Suresh, sureshparekh, blog, jekyll, gh-pages, github, wordpress
 baseurl:  '' # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
-url: https://relativist1.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
+url: https://sureshparekh.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 #
@@ -35,12 +35,12 @@ kramdown:
 permalink: /blog/:categories/:title/
 
 social:
-  name: Saurabh 
+  name: Suresh Parekh 
   links:
-    - https://www.facebook.com/saurabh.cosmos 
-    - https://github.com/Relativist1
-    - https://instagram.com/relativist1
-    - https://inspirehep.net/authors/1853355
+    - https://www.facebook.com/
+    - https://github.com/sureshparekh
+    - https://instagram.com/thesureshparekh
+    - https://inspirehep.net/authors/
 
 # twitter:
 #   card: summary
@@ -57,15 +57,15 @@ social:
 ####################################
 #
 author:  # change following line to your infomation.
-  name: Saurabh # Be used at blog posts' author.
-  first_name: Saurabh  # Be used at index page about me section.
-  last_name:  # Be used at index page about me section.
+  name: Suresh Parekh # Be used at blog posts' author.
+  first_name: Suresh  # Be used at index page about me section.
+  last_name: Parekh  # Be used at index page about me section.
   avatar: /static/assets/img/landing/my_pic.jpg  # upload your avatar at directory and edit it.
   github_username: Relativist1  # Leave blank if you don't have now
   linkedin_id:  # Leave blank if you don't have now
   facebook_username: saurabh.cosmos  # Leave blank if you don't have now
   twitter: 
-  email: sbhkmr1999@gmail.com  # Leave blank if you don't have now
+  email: sureshparekh8412@gmail.com  # Leave blank if you don't have now
   cv: https://relativist1.github.ip/static/assets/cv/CV_academia.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
 
 
