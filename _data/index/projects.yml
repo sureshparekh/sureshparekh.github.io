@@ -4,7 +4,7 @@
 - name: Detecting Radio Loud AGNs using Chandra
   # url: https://github.com/kace-sma-tools
   img: /static/assets/img/landing/12056_processed.png
-  desc: Statistically Detect Jets in High Redshift Quasars
+  desc: 
   i18n: kace-sma-tools
 
 - name: Supercluster and their morphological study
