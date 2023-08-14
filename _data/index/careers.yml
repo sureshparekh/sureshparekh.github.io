@@ -46,7 +46,7 @@
     detail: Inter-University Centre for Astronomy and Astrophysics (IUCAA)
 
   desc:
-    detail: Extended X-Ray Jets in Radio-loud Quasars\: A Morphological Study.
+    detail: Extended X-Ray Jets in Radio\-loud Quasars\: A Morphological Study.
 
   date:
     detail: August, 2022 - May, 2023
@@ -54,7 +54,7 @@
     detail: Research Intern
 
   icon: fa-plus-square
-  present: false
+  present: true
 
 - name:
     detail: Savitribai Phule Pune University
