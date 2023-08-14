@@ -1,7 +1,7 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: National Radio Astronomy Observatory
+    detail: National Radio Astronomy Observatory (NRAO)
 
   desc:
     detail: 
@@ -12,6 +12,20 @@
 
   icon: fa-plus-square
   present: true
+
+- name:
+    detail: Aryabhatta Research Institute of Observational Sciences (ARIES)
+
+  desc:
+    detail: Photometric and Spectroscopic characterization of Mira variable in the field of cluster NGC 559
+  date:
+    detail: August, 2023 - Present
+  job:
+    detail: Research Intern
+
+  icon: fa-plus-square
+  present: true
+
 
 - name:
     detail: GLA University
