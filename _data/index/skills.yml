@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Python, Fortran, Latex, HTML, Sleep
-percentage: 95, 90, 85, 40, 40
+aspects: Python, Fortran, Latex, HTML, Sleep, Motivation
+percentage: 95, 90, 85, 70, 40, 100
