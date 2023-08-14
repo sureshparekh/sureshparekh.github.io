@@ -11,7 +11,7 @@
     detail: Research Intern
 
   icon: fa-plus-square
-  # present: true
+  present: true
 
 - name:
     detail: Aryabhatta Research Institute of Observational Sciences (ARIES)
@@ -24,7 +24,7 @@
     detail: Research Intern
 
   icon: fa-plus-square
-  # present: true
+  present: true
 
 
 - name:
@@ -39,14 +39,14 @@
     detail: Research Intern
 
   icon: fa-plus-square
-  # present: true
+  present: true
 
 
 - name:
     detail: Inter-University Centre for Astronomy and Astrophysics (IUCAA)
 
   desc:
-    detail: Extended X-Ray Jets in Radio-loud Quasars: A Morphological Study.
+    detail: 
 
   date:
     detail: August, 2022 - May, 2023
@@ -54,7 +54,7 @@
     detail: Research Intern
 
   icon: fa-plus-square
-  # present: false
+  present: false
 
 - name:
     detail: Savitribai Phule Pune University
