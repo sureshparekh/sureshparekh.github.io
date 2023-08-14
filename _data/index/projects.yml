@@ -1,22 +1,22 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Shadow of Black holes
+- name: Detecting Radio Loud AGNs using Chandra
   # url: https://github.com/kace-sma-tools
   img: /static/assets/img/landing/bh_shadow.png
-  desc: General Relativist Raytracing and Radiative Transfer
+  desc: Statistically Detect Jets in High redshift Quasars
   #i18n: kace-sma-tools
 
-- name: Black hole Accretion and VLBI Imaging
+- name: Supercluster and their morphological study
   # url: https://relativist1.github.io/simulations
   img: /static/assets/img/landing/bh_accretion.jpeg
-  desc:  Click on the link for a set of simulations.
+  desc:  
   #i18n: k1000-database-queries
 
-- name: Modelling X-Ray Binaries
+- name: Variability in Stars
   img: /static/assets/img/landing/bh_accretion.jpeg
-  desc: 
+  desc: FInding out the period of variability of stars in NGC 559
 
-- name: Bayesian Techniques
+- name: Bayesian Techniques for Observational Cosmology
   img: /static/assets/img/landing/mcmc.jpeg
-  desc: Parameter estimation and model fitting
+  desc: Parameter estimation of cosmological models
