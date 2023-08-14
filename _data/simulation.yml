@@ -1,5 +1,5 @@
 # blog page sections
-# - name: Simulations
-  # href: /simulations/
+- name: AGNs
+  href: /AGN_Project/
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
