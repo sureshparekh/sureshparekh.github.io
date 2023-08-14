@@ -3,20 +3,20 @@
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 - name: Detecting Radio Loud AGNs using Chandra
   # url: https://github.com/kace-sma-tools
-  img: /static/assets/img/landing/bh_shadow.png
-  desc: Statistically Detect Jets in High redshift Quasars
+  img: /static/assets/img/landing/12056_processed.png
+  desc: Statistically Detect Jets in High Redshift Quasars
   #i18n: kace-sma-tools
 
 - name: Supercluster and their morphological study
   # url: https://relativist1.github.io/simulations
-  img: /static/assets/img/landing/bh_accretion.jpeg
+  img: /static/assets/img/landing/220px-An_Intergalactic_Heavyweight.jpg
   desc:  
   #i18n: k1000-database-queries
 
 - name: Variability in Stars
-  img: /static/assets/img/landing/bh_accretion.jpeg
-  desc: FInding out the period of variability of stars in NGC 559
+  img: /static/assets/img/landing/Gaia_phot_Bp_phase_plot.png
+  desc: Period of variability of stars in NGC 559
 
-- name: Bayesian Techniques for Observational Cosmology
-  img: /static/assets/img/landing/mcmc.jpeg
-  desc: Parameter estimation of cosmological models
+- name: Bayesian Techniques
+  img: /static/assets/img/landing/Gaia_phot_Bp_phase_plot.png
+  desc: Parameter estimation and model fitting
