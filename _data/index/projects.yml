@@ -15,7 +15,7 @@
 
 - name: Variability in Stars
   img: /static/assets/img/landing/Gaia_phot_Bp_phase_plot.png
-  desc: Period of variability of stars in NGC 559
+  desc: 
 
 - name: Bayesian Techniques
   img: /static/assets/img/landing/BAO_data_only.png
