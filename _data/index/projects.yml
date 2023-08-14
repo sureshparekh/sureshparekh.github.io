@@ -5,18 +5,18 @@
   # url: https://github.com/kace-sma-tools
   img: /static/assets/img/landing/12056_processed.png
   desc: Statistically Detect Jets in High Redshift Quasars
-  #i18n: kace-sma-tools
+  i18n: kace-sma-tools
 
 - name: Supercluster and their morphological study
   # url: https://relativist1.github.io/simulations
   img: /static/assets/img/landing/220px-An_Intergalactic_Heavyweight.jpg
   desc:  
-  #i18n: k1000-database-queries
+  i18n: k1000-database-queries
 
 - name: Variability in Stars
   img: /static/assets/img/landing/Gaia_phot_Bp_phase_plot.png
   desc: Period of variability of stars in NGC 559
 
 - name: Bayesian Techniques
-  img: /static/assets/img/landing/Gaia_phot_Bp_phase_plot.png
+  img: /static/assets/img/landing/BAO_data_only.png
   desc: Parameter estimation and model fitting
