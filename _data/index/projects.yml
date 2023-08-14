@@ -2,7 +2,7 @@
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 - name: Detecting Radio Loud AGNs using Chandra
-  # url: https://github.com/kace-sma-tools
+  url: sureshparekh.github.io/static/assets/projects/AGN_Project.md
   img: /static/assets/img/landing/12056_processed.png
   desc: Statistically Detect Jets in High Redshift Quasars
   i18n: kace-sma-tools
