@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Projectile Motion</title>
+
+    
+    <!-- for fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+        <header id="header">
+                <h1><a href="index.html">Projectile Motion By Suresh Parekh</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="special">
+                            <a href="#menu" class="menuToggle"></a>
+                            <div id="menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index-new.html">Simulation</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+      <div class="wrapper">
+            <header>
+                <h1>Projectile Motion</h1>
+            </header>      
+      </div>
+      
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-sm-4 filter-wrapper">
+                <div id="panel" class="filter">
+                    <!-- <div style="top: 10px;"><button id="bu1" style="background-color: #0c8383;"></button></div>
+                    <div style="top: 50px;"><button id="bu2" style="background-color: #e00d0d;"></button></div> -->
+                    <!-- <div style="top: 95px;"><input type="checkbox" id="cbSlow" name="cbSlow" value=""><label for="cbSlow" id="lbSlow"></label></div> -->
+                    <!-- <div style="top: 125px;"><span class="pos1" id="ipHa"></span><input type="text" id="ipHb"><span class="pos3" id="ipHc"></span></div>
+                    <div style="top: 155px;"><span class="pos1" id="ipVa"></span><input type="text" id="ipVb"><span class="pos3" id="ipVc"></span></div>
+                    <div style="top: 185px;"><span class="pos1" id="ipWa"></span><input type="text" id="ipWb"><span class="pos3" id="ipWc"></span></div>
+                    <div style="top: 215px;"><span class="pos1" id="ipMa"></span><input type="text" id="ipMb"><span class="pos3" id="ipMc"></span></div>
+                    <div style="top: 245px;"><span class="pos1" id="ipGa"></span><input type="text" id="ipGb"><span class="pos3" id="ipGc"></span></div> -->
+
+
+
+                    <!-- <div style="top: 270px; color: #000000;"><input type="radio" id="rbY" name="bg" value=""><label for="rbY" id="lbY"></label></div>
+                    <div style="top: 295px; color: #000000;"><input type="radio" id="rbV" name="bg" value=""><label for="rbV" id="lbV"></label></div>
+                    <div style="top: 320px; color: #000000;"><input type="radio" id="rbA" name="bg" value=""><label for="rbA" id="lbA"></label></div>
+                    <div style="top: 345px; color: #000000;"><input type="radio" id="rbF" name="bg" value=""><label for="rbF" id="lbF"></label></div>
+                    <div style="top: 370px; color: #000000;"><input type="radio" id="rbE" name="bg" value=""><label for="rbE" id="lbE"></label></div>
+                    <div style="top: 400px;"><span class="pos1" id="author"></span></div> -->
+
+                    <div class="filter-block">
+                        <input type="checkbox" id="cbSlow" name="cbSlow" value=""> <span for="cbSlow" id="lbSlow"></span>
+                    </div>
+                    <div class="filter-block">
+                        <label class="pos1" id="ipHa"></label> 
+                        <input class="form-control" type="text" id="ipHb"> <span class="pos3" id="ipHc"></span>
+                    </div>
+                    <div class="filter-block">
+                        <label class="pos1" id="ipVa"></label>
+                        <input class="form-control" type="text" id="ipVb"><span class="pos3" id="ipVc"></span>
+                    </div>
+                    <div class="filter-block">
+                        <label class="pos1" id="ipWa"></label>
+                        <input class="form-control" type="text" id="ipWb"><span class="pos3" id="ipWc"></span>
+                    </div>
+                    <div class="filter-block">
+                        <label class="pos1" id="ipMa"></label>
+                        <input class="form-control" type="text" id="ipMb"><span class="pos3" id="ipMc"></span>
+                    </div>
+                    <div class="filter-block">
+                        <label class="pos1" id="ipGa"></label>
+                        <input class="form-control" type="text" id="ipGb"><span class="pos3" id="ipGc"></span>
+                    </div>    
+                    
+                  </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="output">
+                  <div id="canvas"><canvas id="cv" width=800 height=500>This browser doesn't support HTML5 canvas!</canvas></div>
+                  <div class="radio-group">
+                      <ul>
+                          <li><input type="radio" id="rbY" name="bg" value=""><label for="rbY" id="lbY"></label></li>
+                          <li><input type="radio" id="rbV" name="bg" value=""><label for="rbV" id="lbV"></label></li>
+                          <li><input type="radio" id="rbA" name="bg" value=""><label for="rbA" id="lbA"></label></li>
+                          <li><input type="radio" id="rbF" name="bg" value=""><label for="rbF" id="lbF"></label></li>
+                          <li><input type="radio" id="rbE" name="bg" value=""><label for="rbE" id="lbE"></label></li>
+                      </ul>    
+                  </div>  
+                </div>
+            </div>  
+            <div class="col-sm-12">
+                <div data-role="controlgroup" class="button-group">
+                    <button id="bu2" class="btn btn-lg btn-danger">Start</button>
+                    <button id="bu1" data-theme="b" class="btn btn-lg btn-primary">Reset</button>
+                </div>  
+            </div> 
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/js1.js"></script>
+    <script src="js/js2.js"></script>
+  </body>
+  </html>    
