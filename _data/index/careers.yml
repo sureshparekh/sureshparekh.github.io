@@ -13,18 +13,18 @@
   icon: fa-plus-square
   present: true
 
-- name:
-    detail: Aryabhatta Research Institute of Observational Sciences (ARIES)
+#- name:
+ #   detail: Aryabhatta Research Institute of Observational Sciences (ARIES)
 
-  desc:
-    detail: Photometric and Spectroscopic characterization of Mira variable in the field of cluster NGC 559.
-  date:
-    detail: August, 2023 - Present
-  job:
-    detail: Research Intern
+  # desc:
+  #   detail: Photometric and Spectroscopic characterization of Mira variable in the field of cluster NGC 559.
+  # date:
+  #   detail: August, 2023 - Present
+  # job:
+  #   detail: Research Intern
 
-  icon: fa-plus-square
-  present: true
+  # icon: fa-plus-square
+  # present: true
 
 
 - name:
