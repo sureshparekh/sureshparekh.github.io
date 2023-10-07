@@ -1,5 +1,5 @@
-# blog page sections
-- name: AGNs
-  href: /AGN_Project/
+#blog page sections
+- name: Projectile Motion
+  href: https://sureshparekh.github.io/projectilemotion/index.html
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
