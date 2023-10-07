@@ -32,7 +32,7 @@ kramdown:
 # Jekyll-SEO-tag settings
 ####################################
 #
-permalink: /blog/:categories/:title/
+#permalink: /blog/:categories/:title/
 
 social:
   name: Suresh Parekh 
