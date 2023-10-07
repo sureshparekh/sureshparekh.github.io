@@ -13,15 +13,16 @@
   desc:  More information coming soon...
   i18n: k1000-database-queries
 
-- name: Investigating the expansion of Universe
-  img: /static/assets/img/landing/expansion.jpg
-  desc: 
-
-- name: Bayesian Techniques
-  img: /static/assets/img/landing/BAO_data_only.png
-  desc: Parameter estimation and model fitting
-
- - name: Projectile Motion Demonstration
+- name: Investigating the Expansion of Universe
   url: https://sureshparekh.github.io/projectilemotion/index-new.html
   img: /static/assets/img/landing/Projectile.png
   desc: National Competition for Innovation in Computational Physics (2019) winning project.
+
+- name: Investigating the expansion of the Universe using Bayesian Techniques
+  img: /static/assets/img/landing/BAO_data_only.png
+  desc: Parameter estimation of cosmological model and studying Acceleration of universe.
+
+ # - name: Projectile Motion Demonstration
+ #  url: https://sureshparekh.github.io/projectilemotion/index-new.html
+ #  img: /static/assets/img/landing/Projectile.png
+ #  desc: National Competition for Innovation in Computational Physics (2019) winning project.
