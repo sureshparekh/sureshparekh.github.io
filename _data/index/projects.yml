@@ -5,13 +5,13 @@
   url: sureshparekh.github.io/static/assets/projects/AGN_Project.md
   img: /static/assets/img/landing/12056_processed.png
   desc: Statistically Detect Jets in High Redshift Quasars
-  i18n: kace-sma-tools
+  #i18n: kace-sma-tools
 
 - name: Supercluster and their morphological study
   # url: https://relativist1.github.io/simulations
   img: /static/assets/img/landing/220px-An_Intergalactic_Heavyweight.jpg
   desc:  More information coming soon...
-  i18n: k1000-database-queries
+  #i18n: k1000-database-queries
 
 - name: Investigating the Expansion of Universe
   url: https://sureshparekh.github.io/projectilemotion/index-new.html
