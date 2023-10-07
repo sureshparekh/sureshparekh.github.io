@@ -31,10 +31,10 @@
 #   tpl: stellar.html
 #   page: stellar/
 
-- id: projectilemotion
-  i18n: nav.simulations
-  name: Projectile Motion
-  tpl: projectilemotion/index.html
+# - id: projectilemotion
+#   i18n: nav.simulations
+#   name: Projectile Motion
+#   tpl: projectilemotion/index.html
 
 # - id: brahma
 #   i18n: nav.brahma
@@ -48,11 +48,11 @@
 #   tpl: gallifray.html
 #   page: gallifray/
 
-# - id: publications
-#   i18n: nav.publications
-#   name: Publications
-#   tpl: pubs.html
-#   page: publications/
+- id: publications
+  i18n: nav.publications
+  name: Publications
+  tpl: pubs.html
+  page: publications/
 
 # - id: blog
 #   i18n: nav.blog
