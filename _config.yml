@@ -66,7 +66,7 @@ author:  # change following line to your infomation.
   facebook_username:   # Leave blank if you don't have now
   twitter: 
   instagram: https://www.instagram.com/thesureshparekh
-  email: sureshparekh8412@gmail.com  # Leave blank if you don't have now
+  email: thesureshparekh@gmail.com  # Leave blank if you don't have now
   cv: static/assets/cv/CV_Parekh.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
 
 
@@ -78,7 +78,7 @@ author:  # change following line to your infomation.
     - name: icon-ubuntu
     - name: fa-code
   desc: "Master's in Physics with specialization in Astrophysics, Curious Wanderer, Science Communicator. 
-        A physics postgraduate with a specialization in astrophysics, my expertise is centered around Active Galactic Nuclei (AGNs). Proficient in blending simulations with observational insights, I passionately explore the wonders of the cosmos through computational astrophysics, driven by an unwavering curiosity."
+        A physics postgraduate specialising in astrophysics, my expertise is centred around Active Galactic Nuclei (AGNs). Proficient in blending simulations with observational insights, I passionately explore the wonders of the cosmos through computational astrophysics, driven by an unwavering curiosity."
 
 
 # comment
