@@ -31,11 +31,11 @@
 #   tpl: stellar.html
 #   page: stellar/
 
-# - id: simulations
-#   i18n: nav.simulations
-#   name: Simulations
-#   tpl: simulations.html
-#   page: simulations/
+- id: projectilemotion
+  i18n: nav.simulations
+  name: Projectile Motion
+  tpl: projectilemotion/index.html
+  page: Projectile Motion/
 
 # - id: brahma
 #   i18n: nav.brahma
