@@ -13,8 +13,8 @@
   desc:  More information coming soon...
   i18n: k1000-database-queries
 
-- name: Variability in Stars
-  img: /static/assets/img/landing/Gaia_phot_Bp_phase_plot.png
+- name: Investigating the expansion of Universe
+  img: /static/assets/img/landing/expansion.png
   desc: 
 
 - name: Bayesian Techniques
