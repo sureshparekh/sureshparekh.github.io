@@ -20,3 +20,9 @@
 - name: Bayesian Techniques
   img: /static/assets/img/landing/BAO_data_only.png
   desc: Parameter estimation and model fitting
+
+ - name: Projectile Motion Demonstration
+  url: https://sureshparekh.github.io/projectilemotion/index-new.html
+  img: /static/assets/img/landing/Projectile.png
+  desc: National Competition for Innovation in Computational Physics (2019) winning project.
+  i18n: k1000-database-queries 
