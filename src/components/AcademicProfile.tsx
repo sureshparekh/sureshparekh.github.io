@@ -244,6 +244,7 @@ export default function AcademicProfile() {
                 href={pub.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`View publication: ${pub.title}`}
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -281,6 +282,7 @@ export default function AcademicProfile() {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Connect on ${social.name}`}
                 className="group flex flex-col items-center gap-3 text-gray-400 hover:text-white transition-colors"
               >
                 <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
