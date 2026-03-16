@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Background Circle -->
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1f2937" />
+      <stop offset="100%" stop-color="#030712" />
+    </radialGradient>
+  </defs>
+
+  <!-- Dark Cosmic background -->
+  <circle cx="50" cy="50" r="48" fill="url(#bg)" stroke="#374151" stroke-width="2" />
+
+  <!-- The stylized S curve mimicking a telescope path -->
+  <path d="M 68 32 C 55 18, 38 25, 38 42 C 38 58, 62 50, 62 66 C 62 82, 45 88, 32 74" 
+        fill="none" 
+        stroke="#e5e7eb" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Telescope Lens flare / star -->
+  <path d="M 69 22 L 72 29 L 79 32 L 72 35 L 69 42 L 66 35 L 59 32 L 66 29 Z" 
+        fill="#fbbf24" />
+
+  <!-- Observation point / dot at bottom -->
+  <circle cx="26" cy="74" r="5" fill="#60a5fa" />
+</svg>
