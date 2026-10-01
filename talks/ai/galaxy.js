@@ -12,15 +12,28 @@ const D0 = Math.hypot(VIEW.pos[0] - VIEW.target[0], VIEW.pos[1] - VIEW.target[1]
 
 const G = (window.GAL = { alpha: 0, zoom: 0.55, ox: 0, oy: 0 });
 
-if (!new URLSearchParams(location.search).has("presenter")) {
+// The talk waits on this before it starts, so the entrance never plays over an empty sky.
+let ready;
+window.GAL_READY = new Promise((r) => (ready = r));
+const settle = (ms) => new Promise((r) => setTimeout(r, ms));
+
+if (new URLSearchParams(location.search).has("presenter")) ready();
+else {
   const canvas = document.getElementById("galaxy");
   const anchor = document.getElementById("gal-anchor");
   const stage = new Stage3D(canvas);
-  loadGalaxy("/data/galaxy").then((gal) => {
-    stage.setData(gal, fieldRanges(gal, FIELDS));
-    stage.setField("composite");
-    stage.attach(anchor, null, { view: VIEW, ms: 0, autoRotate: 0.045 });
-  });
+  const bar = document.querySelector("#loader b"), pct = document.querySelector("#loader em");
+  const progress = (p) => { bar.style.width = `${(p * 100).toFixed(1)}%`; pct.textContent = `${Math.round(p * 100)}%`; };
+  loadGalaxy("/data/galaxy", progress)
+    .then(async (gal) => {
+      progress(1);
+      stage.setData(gal, fieldRanges(gal, FIELDS));
+      stage.setField("composite");
+      stage.attach(anchor, null, { view: VIEW, ms: 0, autoRotate: 0.045 });
+      await settle(600); // let Stage3D's auto-exposure run before the first fade-in
+    })
+    .catch((e) => console.error("galaxy failed to load; starting without it", e))
+    .finally(ready);
 
   let lastView = "";
   const tick = () => {

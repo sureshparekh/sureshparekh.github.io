@@ -349,6 +349,13 @@ kbd { font: 500 18px var(--mono); border: 1px solid var(--line); border-radius: 
 .brand-sub { font: 400 10.5px/1.2 var(--mono); color: var(--muted); letter-spacing: .04em; margin-top: 3px; }
 body.presenter .hdr { display: none; }
 
+/* ---------- loader (the site's .loading pill, sized for a projector) ---------- */
+.loading { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 60; padding: 18px 28px; border-radius: 999px; font: 500 17px/1 var(--mono); color: var(--muted); display: flex; gap: 18px; align-items: center; }
+.loading i { display: block; width: 260px; height: 4px; border-radius: 2px; background: rgba(255, 255, 255, .12); overflow: hidden; }
+.loading i b { display: block; height: 100%; background: var(--accent); width: 0; transition: width .2s; box-shadow: 0 0 10px var(--accent); }
+.loading em { font-style: normal; width: 3.2em; text-align: right; color: var(--text); font-variant-numeric: tabular-nums; }
+body.presenter .loading { display: none; }
+
 /* ---------- presenter view ---------- */
 body.presenter { overflow: auto; font-size: 20px; cursor: default; }
 body.presenter #galaxy, body.presenter #viewport, body.presenter #progress, body.presenter #hint { display: none; }
@@ -370,7 +377,7 @@ body.presenter #galaxy, body.presenter #viewport, body.presenter #progress, body
 #pv-reset { flex: none !important; padding: 6px 14px !important; font-size: 14px !important; }
 
 /* ---------- liquid glass: the site's .glass, applied to every surface ---------- */
-.liquid, .glass, .quip, .card, .node span, .lnode, .tool, .bubble, .chip, .tag, .window, .wk span, .go, .ice {
+.liquid, .loading, .glass, .quip, .card, .node span, .lnode, .tool, .bubble, .chip, .tag, .window, .wk span, .go, .ice {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.05) 46%, rgba(255, 255, 255, 0.075) 100%);
   -webkit-backdrop-filter: blur(20px) saturate(190%) brightness(1.08) contrast(1.05);
   backdrop-filter: blur(20px) saturate(190%) brightness(1.08) contrast(1.05);

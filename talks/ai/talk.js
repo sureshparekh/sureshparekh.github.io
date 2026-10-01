@@ -583,7 +583,9 @@
   const start = parseInt(location.hash.slice(1), 10);
   const instant = new URLSearchParams(location.search).has("instant");
   const boot = () => (start > 1 || instant ? go((start || 1) - 1, true) : go(0));
-  document.fonts && document.fonts.ready ? document.fonts.ready.then(boot) : boot();
+  Promise.all([document.fonts ? document.fonts.ready : null, window.GAL_READY]).then(() => {
+    gsap.to("#loader", { autoAlpha: 0, scale: 0.96, filter: "blur(6px)", duration: 0.6, ease: "power2.in", onComplete: boot });
+  });
 
   window.TALK = { go, next, prev, steps: STEPS, labels, tl };
 })();
