@@ -327,6 +327,10 @@ kbd { font: 500 18px var(--mono); border: 1px solid var(--line); border-radius: 
 .tweet-card.end { left: 460px; top: 230px; width: 1000px; }
 .thanks { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
 .thanks .mega { font-size: 190px; }
+/* dark halo behind "Thank You" only; it is a child of #thanks so it fades in with the text */
+.thanks .halo { position: absolute; left: 50%; top: 50%; width: 1500px; height: 640px; margin: -320px 0 0 -750px; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(6,7,11,.72), rgba(6,7,11,.32) 60%, transparent); }
+.thanks .mega { position: relative; }
 .intro-wrap .mega, .thanks .mega { text-shadow: 0 2px 40px rgba(6,7,11,.55); }
 .byline span { color: var(--text); text-shadow: 0 1px 18px rgba(6,7,11,.8); }
 
