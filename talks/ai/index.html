@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Something on AI</title>
+  <meta name="description" content="Something on AI: a talk by Suresh Parekh." />
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="talk.css" />
+</head>
+<body>
+  <div id="gal-anchor"></div>
+  <canvas id="galaxy"></canvas>
+
+  <!-- brand pill, same markup and styles as the site header -->
+  <header class="hdr">
+    <div class="brand liquid" id="brand">
+      <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#mark" /></svg></span>
+      <span><div class="brand-name">Suresh Parekh</div><div class="brand-sub">Astrophysics · UFRGS</div></span>
+    </div>
+  </header>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="mk-p" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffbf80" /><stop offset="1" stop-color="#f08a3c" />
+      </linearGradient>
+      <radialGradient id="mk-n" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#fff6e0" /><stop offset=".5" stop-color="#ffd27a" /><stop offset="1" stop-color="#ffd27a" stop-opacity="0" />
+      </radialGradient>
+      <symbol id="mark" viewBox="4 6 24.8 20">
+        <g fill="none" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="#eef0f5" d="M14.2 11.3C13.3 9.8 11.9 9 10.1 9 7.7 9 6 10.4 6 12.5c0 2.2 2 2.9 4.1 3.5 2.2.6 4.2 1.4 4.2 3.8 0 2.1-1.8 3.3-4.2 3.3-2 0-3.5-.8-4.5-2.4" />
+          <path stroke="url(#mk-p)" d="M18.4 23V9h3.9c2.7 0 4.5 1.8 4.5 4.2s-1.8 4.2-4.5 4.2h-3.9" />
+        </g>
+        <circle cx="22.4" cy="13.2" r="2.3" fill="url(#mk-n)" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div id="viewport">
+    <div id="stage">
+
+      <!-- ============ INTRO ============ -->
+      <section class="scene" id="sc-intro">
+        <div class="intro-wrap">
+          <h1 class="mega" id="t-title">Something on AI</h1>
+        </div>
+      </section>
+
+      <!-- ============ 2022 ============ -->
+      <section class="scene" id="sc-2022">
+        <div class="date-big" id="d2022">30 · 11 · 2022</div>
+        <figure class="tweet-card in" id="samTweet"><img src="img/sam_tweet.jpg" alt="Sam Altman: today we launched ChatGPT" /></figure>
+        <div class="stat in" id="stat1m"><b id="c1m">0</b><span>users in 5 days</span></div>
+        <div class="quip in" id="q-sam" style="left:1180px; top:690px">
+          <div class="q-who"><span class="q-ava">🦜</span><div><b>Sam Altman</b><small>4 Dec 2022, four days in</small></div></div>
+          <p>“i am a stochastic parrot, and so r u”</p>
+          <em>Already philosophical on day four.</em>
+        </div>
+      </section>
+
+      <!-- ============ TIMELINE ============ -->
+      <section class="scene" id="sc-time">
+        <div class="h-kicker in" id="tl-k">four years, roughly</div>
+        <div id="tl-group">
+          <svg class="tl-svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+            <defs>
+              <linearGradient id="tlg" gradientUnits="userSpaceOnUse" x1="160" y1="0" x2="1780" y2="0">
+                <stop offset="0" stop-color="#8fb6ff" /><stop offset=".6" stop-color="#c8a2ff" /><stop offset="1" stop-color="#f4a259" />
+              </linearGradient>
+            </defs>
+            <path id="tl-line" d="M160 540 H1780" stroke="url(#tlg)" stroke-width="3" stroke-linecap="round" fill="none" />
+          </svg>
+          <div id="tl-items"></div>
+        </div>
+        <div class="quip in" id="q-elon" style="left:120px; top:820px">
+          <div class="q-who"><span class="q-ava">🚀</span><div><b>Elon Musk</b><small>2024</small></div></div>
+          <p>“AI smarter than any one human… probably around the end of next year.”</p>
+          <em>Every year is “next year”. ⏳</em>
+        </div>
+        <div class="ns-card glass in" id="ns-card">
+          <svg class="vortex" viewBox="-100 -100 200 200" width="300" height="300">
+            <g class="vortex-spin">
+              <path class="vx" d="M0 0 m0 -6 a6 6 0 1 1 -6 6 a14 14 0 1 1 14 14 a26 26 0 1 1 -26 -26 a42 42 0 1 1 42 42 a62 62 0 1 1 -62 -62 a84 84 0 1 1 84 84" />
+              <path class="vx vx2" d="M0 0 m0 6 a6 6 0 1 1 6 -6 a14 14 0 1 1 -14 -14 a26 26 0 1 1 26 26 a42 42 0 1 1 -42 -42 a62 62 0 1 1 62 62 a84 84 0 1 1 -84 -84" />
+            </g>
+            <circle r="5" fill="#fff" class="vx-core" />
+          </svg>
+          <div class="ns-text">
+            <div class="kicker">8 September 2026 · OpenAI</div>
+            <h3>3D Navier–Stokes can blow up</h3>
+            <p>An AI-produced proof that an initially smooth flow develops a singularity in finite time, checked line by line in <b>Lean</b>.</p>
+            <div class="chips">
+              <span class="chip">🤖 ~10,000 agents</span><span class="chip">⏱️ 88 hours</span><span class="chip">💰 “several million dollars”</span>
+            </div>
+            <p class="fine">Still being checked by mathematicians, with a public credit dispute (Buckmaster at NYU and Alpöge at Anthropic were working on it in parallel). Clay hasn’t paid out yet.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FROZEN MODEL ============ -->
+      <section class="scene" id="sc-frozen">
+        <div class="col-left">
+          <div class="ice in" id="ice">
+            <div class="shelf"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="botty" id="bot1"></div>
+            <span class="snow s1">❄️</span><span class="snow s2">❄️</span><span class="snow s3">❄️</span><span class="snow s4">❄️</span>
+            <div class="cutoff">knowledge cutoff · 2021</div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="h-kicker in">2022 · no internet</div>
+          <h2 class="h2 in">A genius locked in a library 📚🔒</h2>
+          <p class="body in">Trained once on a snapshot of the internet. Everything it “knows” is squeezed into its weights. It can’t look anything up.</p>
+          <div id="qa">
+            <div class="bubble user in" id="qa-q">Who won the 2022 World Cup? ⚽</div>
+            <div class="bubble bot in" id="qa-a">France, obviously. 🇫🇷 Back-to-back champions.</div>
+            <div class="stamp" id="stamp">CONFIDENTLY WRONG</div>
+          </div>
+          <div id="ntp">
+            <p class="body in" id="ntp-s">So when you ask, it just predicts the next word:<br /><span class="mono">“Little Red Dots are ___”</span></p>
+            <div class="bars" id="ntp-bars">
+              <div class="bar in"><span>a skin rash 🩺</span><i style="--w:38%"></i><b data-v="38">0%</b></div>
+              <div class="bar in"><span>ladybugs 🐞</span><i style="--w:27%"></i><b data-v="27">0%</b></div>
+              <div class="bar in"><span>a kids’ book 📕</span><i style="--w:21%"></i><b data-v="21">0%</b></div>
+              <div class="bar in hl"><span>black holes 🕳️</span><i style="--w:1%"></i><b data-v="0.2">0%</b></div>
+            </div>
+            <p class="body dim in" id="ntp-m">JWST found them in 2023. A 2021 model has never heard of them, but it answers anyway.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ RAG ============ -->
+      <section class="scene" id="sc-rag">
+        <div class="top-title">
+          <div class="h-kicker in">2023 · it gets a library card</div>
+          <h2 class="h2 in"><span class="grad">RAG</span>: Retrieval-Augmented Generation</h2>
+          <p class="body in">An open-book exam 📖. Fetch the relevant text first, then answer from it.</p>
+        </div>
+        <div class="pipe" id="pipe">
+          <svg class="pipe-svg" width="1600" height="200" viewBox="0 0 1600 200">
+            <path class="pipe-line" d="M140 100 H1460" />
+          </svg>
+          <div class="pkts" id="pkts"><div class="pkt p1"></div><div class="pkt p2"></div><div class="pkt p3"></div></div>
+          <div class="node in" style="left:0"><span>❓</span><b>Question</b><small>“who won in 2022?”</small></div>
+          <div class="node in" style="left:330px"><span>🔎</span><b>Retrieve</b><small>search the web or your PDFs: text → vectors → nearest matches</small></div>
+          <div class="node in" style="left:660px"><span>📄</span><b>Top chunks</b><small>pasted into the prompt</small></div>
+          <div class="node in" style="left:990px"><span>🧠</span><b>LLM reads</b><small>answers <i>from</i> the evidence</small></div>
+          <div class="node in" style="left:1320px"><span>✅</span><b>Answer</b><small>with citations</small></div>
+        </div>
+        <div class="rag-ans">
+          <div class="botty small in" id="bot2"></div>
+          <div class="bubble bot in" id="rag-a">Argentina 🇦🇷, on penalties. Messi finally got one. <span class="cite">[1] fifa.com</span></div>
+          <p class="body dim in" id="rag-m">Same model. Better context. Better answer.<br />RAG doesn’t make it smarter, only better informed.</p>
+        </div>
+      </section>
+
+      <!-- ============ PARAMETERS ============ -->
+      <section class="scene" id="sc-param">
+        <div class="col-left" id="net-wrap">
+          <svg id="net" width="760" height="620" viewBox="0 0 760 620"></svg>
+          <div class="w-label in" id="w-label"><span class="mono">w = 0.73</span> ← one parameter: a knob 🎛️</div>
+        </div>
+        <div class="col-right" id="param-text">
+          <div class="h-kicker in">what is a “parameter”?</div>
+          <h2 class="h2 in">Billions of knobs 🎛️</h2>
+          <p class="body in">Every connection in the network is a number. <b>Training</b> means nudging all of them, again and again, until the next word comes out right.</p>
+          <p class="body dim in">Knowledge isn’t stored like files. It’s spread across the knobs.</p>
+        </div>
+        <div id="chart">
+          <div class="h-kicker in">model size · log scale</div>
+          <div class="crow in" data-n="1.17e8"><span>GPT-1 <small>2018</small></span><i></i><b>117 M</b></div>
+          <div class="crow in" data-n="1.5e9"><span>GPT-2 <small>2019</small></span><i></i><b>1.5 B</b></div>
+          <div class="crow in" data-n="1.75e11"><span>GPT-3 <small>2020</small></span><i></i><b>175 B</b></div>
+          <div class="crow in" data-n="6.71e11"><span>DeepSeek-V3 <small>2024</small></span><i></i><b>671 B</b></div>
+          <div class="crow in" data-n="1e12"><span>Kimi K2 <small>2025</small></span><i></i><b>1 T</b></div>
+          <div class="crow in ghost" data-n="1e14"><span>your brain 🧠 <small>synapses</small></span><i></i><b>~100 T</b></div>
+          <p class="fine in">The frontier labs don’t publish their sizes any more (probably trillions). Just holding GPT-3’s weights takes ~350 GB.</p>
+        </div>
+        <div id="buys">
+          <div class="buy glass in"><span>📚</span><b>Stores more</b><small>facts, languages, code, physics</small></div>
+          <div class="buy glass in"><span>🧩</span><b>Subtler patterns</b><small>abilities nobody trained it for explicitly</small></div>
+          <div class="buy glass in"><span>🔥</span><b>Costs more</b><small>GPUs to train, GPUs to run</small></div>
+        </div>
+        <div class="quip in" id="q-jensen" style="left:1240px; top:770px">
+          <div class="q-who"><span class="q-ava">🧥</span><div><b>Jensen Huang</b><small>every GTC since 2018</small></div></div>
+          <p>“The more you buy, the more you save.”</p>
+          <em>Said by the man who sells the GPUs.</em>
+        </div>
+      </section>
+
+      <!-- ============ CONTEXT ============ -->
+      <section class="scene" id="sc-ctx">
+        <div class="col-left">
+          <div class="h-kicker in">context window</div>
+          <h2 class="h2 in">Its working memory</h2>
+          <p class="body in">Everything it can “see” at once: your prompt, the files, the conversation. Measured in <b>tokens</b> (1 token ≈ ¾ of a word).</p>
+          <div class="ctr in"><b id="ctx-n">4,096</b><span id="ctx-era">tokens · ChatGPT, 2022</span></div>
+          <ul class="eq" id="ctx-eq">
+            <li class="in">≈ 750,000 words</li>
+            <li class="in">≈ 2,500 pages</li>
+            <li class="in">≈ your thesis, every paper you cited, and your code, <b>all at once</b></li>
+          </ul>
+        </div>
+        <div class="col-right">
+          <div class="window in" id="win">
+            <div class="win-bar"><i></i><i></i><i></i></div>
+            <div class="win-fill" id="win-fill"></div>
+            <div class="pages" id="pages"></div>
+          </div>
+        </div>
+        <div id="lost">
+          <div class="tiles" id="tiles"></div>
+          <div class="tile-lab in"><span>beginning ✓</span><span>the middle… 🤔</span><span>end ✓</span></div>
+          <p class="body in">Big memory ≠ perfect attention. Details in the middle get missed (“lost in the middle”).</p>
+          <p class="body dim in">Same as me in a three-hour meeting. 😴</p>
+        </div>
+      </section>
+
+      <!-- ============ AGENTS LOOP ============ -->
+      <section class="scene" id="sc-agent">
+        <div class="col-left">
+          <div class="h-kicker in">2025 · agents</div>
+          <h2 class="h2 in">A chatbot answers.<br /><span class="grad">An agent does.</span></h2>
+          <p class="body in">Agent = model + tools + a loop. It runs code, reads the error, fixes it, and runs it again, until the job is done.</p>
+        </div>
+        <div class="loop-wrap">
+          <svg class="loop-svg" width="640" height="640" viewBox="0 0 640 640">
+            <circle id="loop-c" cx="320" cy="320" r="230" />
+          </svg>
+          <div class="orbit-dot"></div>
+          <div class="lnode in" style="left:320px; top:90px">🤔<b>Think</b></div>
+          <div class="lnode in" style="left:520px; top:435px">🛠️<b>Act</b></div>
+          <div class="lnode in" style="left:120px; top:435px">👀<b>Observe</b></div>
+          <div class="botty small center in" id="bot3"></div>
+          <div class="tools">
+            <span class="tool in" style="left:-40px; top:40px">💻 terminal</span>
+            <span class="tool in" style="left:560px; top:20px">📁 files</span>
+            <span class="tool in" style="left:600px; top:600px">🌐 web</span>
+            <span class="tool in" style="left:-80px; top:610px">🐍 python</span>
+          </div>
+        </div>
+        <div class="quip in" id="q-dario" style="left:120px; top:700px">
+          <div class="q-who"><span class="q-ava">🧑‍🔬</span><div><b>Dario Amodei</b><small>March 2025</small></div></div>
+          <p>“In three to six months, AI will be writing 90% of the code.”</p>
+          <em>In my repo, at least: guilty. 🙋</em>
+        </div>
+      </section>
+
+      <!-- ============ AVENGERS ============ -->
+      <section class="scene" id="sc-av">
+        <div class="av-title">
+          <div class="h-kicker in">my stack</div>
+          <h2 class="h2 in">My Avengers 🦸 <span class="grad">Assemble!</span></h2>
+        </div>
+        <svg class="av-lines" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+        <div id="av-cards"></div>
+        <div class="av-note in" id="av-ro">🔒 <b>Four auditors are read-only.</b> “An agent that repairs what it finds stops reporting what it found.”</div>
+        <div class="av-note in" id="av-md">🧠 <b>Opus</b> where a wrong answer is silent · ⚙️ <b>Sonnet</b> for bookkeeping · 🕶️ a hook logs everything, and no agent can switch it off</div>
+        <div class="meter in" id="meter">
+          <div class="m-lab">token bill 🔥</div>
+          <div class="m-bar"><i id="m-fill"></i></div>
+        </div>
+        <div id="money"></div>
+        <div class="snap" id="snap">🫰</div>
+        <div id="dust"></div>
+        <div class="opus in" id="opus">
+          <div class="opus-orb"><svg class="ast" viewBox="-60 -60 120 120" width="170" height="170"><g stroke="#fff6ec" stroke-width="11" stroke-linecap="round"><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(0)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(30)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(60)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(90)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(120)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(150)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(180)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(210)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(240)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(270)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(300)"/><line x1="0" y1="-14" x2="0" y2="-52" transform="rotate(330)"/></g></svg></div>
+          <div class="opus-txt">
+            <div class="kicker">2026</div>
+            <h3>Claude Opus 5.5, on its own</h3>
+            <ul>
+              <li class="in">✓ one model, one long context, one session</li>
+              <li class="in">✓ no hand-offs, no re-reading the codebase eleven times</li>
+              <li class="in">✓ fewer tokens and, in my experience, a better job</li>
+            </ul>
+            <p class="fine in">(Unless you’re solving Navier–Stokes and have 10,000 agents and a few million dollars to spare. 😄)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SPECIALITIES ============ -->
+      <section class="scene" id="sc-spec">
+        <div class="top-title" id="spec-title">
+          <div class="h-kicker in">pick the right tool</div>
+          <h2 class="h2 in">Every AI has a superpower</h2>
+        </div>
+        <div class="spec-row" id="spec-row">
+          <div class="spec glass in"><span>🎨</span><b>ChatGPT</b><p>paints pixels: images, artwork, textures</p></div>
+          <div class="spec glass in hl"><span>📐</span><b>Claude</b><p>draws with code: vector graphics, layouts, diagrams, long documents, software</p></div>
+          <div class="spec glass in"><span>🎥</span><b>Gemini</b><p>video, search, and everything inside Google</p></div>
+        </div>
+        <p class="body dim center-text in" id="spec-why">Claude doesn’t generate images. That isn’t what it’s built for.</p>
+        <div class="lrd" id="lrd">
+          <div class="lrd-zoom" id="lrd-zoom"><img src="img/lrd_full.jpg" alt="Proposed evolutionary sequence of the Little Red Dots" /></div>
+        </div>
+        <div class="tag in" id="tag-gpt">🎨 the artwork: <b>ChatGPT</b></div>
+        <div class="tag in" id="tag-cl">📐 layout, labels, spectra, scale bar: <b>Claude</b> (all vectors)</div>
+      </section>
+
+      <!-- ============ THINK LIKE AN AI ============ -->
+      <section class="scene" id="sc-think">
+        <div class="top-title">
+          <div class="h-kicker in">how I use it</div>
+          <h2 class="h2 in">To use AI, <span class="grad">think like an AI</span> 🤖</h2>
+        </div>
+        <div class="think-rows" id="think-rows">
+          <div class="trow glass in"><span>👁️</span><b>It only sees</b><p>your prompt and the context you hand it. Nothing in your head.</p></div>
+          <div class="trow glass in"><span>🎲</span><b>It predicts</b><p>the most <i>plausible</i> answer, not the true one.</p></div>
+          <div class="trow glass in"><span>🕳️</span><b>It fills gaps</b><p>with the most <i>average</i> guess. Vague in, generic out.</p></div>
+        </div>
+        <div class="cmp" id="cmp">
+          <div class="cmp-col glass in">
+            <div class="prompt mono">“make me a galaxy simulation”</div>
+            <svg class="blob" viewBox="0 0 300 220" width="300" height="220"><ellipse cx="150" cy="110" rx="110" ry="60" fill="url(#bl)" /><defs><radialGradient id="bl"><stop offset="0" stop-color="#fff" stop-opacity=".9" /><stop offset="1" stop-color="#8fb6ff" stop-opacity="0" /></radialGradient></defs></svg>
+            <div class="verdict">🤷 a “typical” galaxy</div>
+          </div>
+          <div class="cmp-col glass in good">
+            <div class="prompt mono small">“Seyfert disc + bulge, 490k bodies, softened gravity (0.15 kpc), leapfrog to 640 Myr, AGN ionisation cone at 27°, colour stars by age, Hα and [O III] for the gas, export for three.js…”</div>
+            <svg class="spiral" viewBox="-110 -110 220 220" width="300" height="220">
+              <g class="spiral-spin">
+                <path d="M0 0 C 20 -30, 60 -30, 80 0 S 70 60, 20 80" />
+                <path d="M0 0 C -20 30, -60 30, -80 0 S -70 -60, -20 -80" />
+                <path class="arm2" d="M0 0 C 30 20, 30 60, 0 80 S -60 70, -80 20" />
+                <path class="arm2" d="M0 0 C -30 -20, -30 -60, 0 -80 S 60 -70, 80 -20" />
+              </g>
+              <path class="cone" d="M0 0 L-28 -100 L28 -100 Z M0 0 L-28 100 L28 100 Z" />
+              <circle r="7" fill="#ffe2a8" />
+            </svg>
+            <div class="verdict">🎯 <i>your</i> science</div>
+          </div>
+        </div>
+        <div class="msg" id="msg">
+          <p class="big in">AI is a very fast, very eager intern.</p>
+          <p class="big grad in">You still have to be the scientist.</p>
+          <p class="body dim in">Do the research first: what physics, which method, which tools, what it should look like. <i>Then</i> hand it over.</p>
+        </div>
+      </section>
+
+      <!-- ============ CASE STUDY ============ -->
+      <section class="scene" id="sc-case">
+        <div class="top-title">
+          <div class="h-kicker in">a case study</div>
+          <h2 class="h2 in">One month of curiosity 🌀</h2>
+        </div>
+        <div class="weeks" id="weeks">
+          <svg class="wk-svg" width="1600" height="80" viewBox="0 0 1600 80"><path id="wk-line" d="M100 40 H1500" /></svg>
+          <div class="wk in" style="left:0"><span>📚</span><b>Read</b><small>how N-body codes actually work</small></div>
+          <div class="wk in" style="left:350px"><span>🔍</span><b>Dissect</b><small>other people’s codes</small></div>
+          <div class="wk in" style="left:700px"><span>🌌</span><b>Build</b><small>my own Seyfert galaxy (okay-ish)</small></div>
+          <div class="wk in" style="left:1050px"><span>🗺️</span><b>Plan</b><small>layout, features, stellar pops, spectra</small></div>
+          <div class="wk in final" style="left:1400px"><span>✨</span><b>1 session</b><small>Claude, no agents</small></div>
+        </div>
+        <div class="brief glass in" id="brief">
+          <div class="brief-h"><span class="mono">brief.md</span><small>what I handed over (simplified)</small></div>
+          <ul>
+            <li class="in">🌌 3D Seyfert galaxy you can rotate: 490k bodies, 640 Myr</li>
+            <li class="in">🗺️ maps: stellar age, metallicity, star formation, Hα, [O III], BPT</li>
+            <li class="in">🔭 click anywhere to get an AGN spectrum from that aperture</li>
+            <li class="in">🎨 the exact look: dark, glassy, orange and blue, no clutter</li>
+            <li class="in">📄 research, CV, publications, all from one content file</li>
+          </ul>
+          <div class="brief-f">→ one session · very few tokens · no agents</div>
+        </div>
+        <p class="body dim center-text in" id="case-m">One month isn’t enough to <i>understand</i> N-body simulations. It’s plenty for outreach, if you know exactly what you want.</p>
+      </section>
+
+      <!-- ============ LIVE ============ -->
+      <section class="scene" id="sc-live">
+        <div class="live">
+          <div class="h-kicker in">the result</div>
+          <div class="url" id="url">sureshparekh.github.io</div>
+          <a class="go in" id="go" href="https://sureshparekh.github.io/" target="_blank" rel="noopener">Let’s go live <span>↗</span></a>
+        </div>
+      </section>
+
+      <!-- ============ END ============ -->
+      <section class="scene" id="sc-end">
+        <div class="quip big-quip in" id="q-jensen2">
+          <div class="q-who"><span class="q-ava">🧥</span><div><b>Jensen Huang</b><small>February 2024</small></div></div>
+          <p>“It is our job to create computing technology such that nobody has to program.”</p>
+        </div>
+        <figure class="tweet-card end in" id="endTweet"><img src="img/end_tweet.jpg" alt="Do not forget how to code. AI won't build illegal apps. You will." /></figure>
+        <div class="thanks" id="thanks">
+          <h1 class="mega in">Thank You</h1>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <div id="progress"><i></i></div>
+
+  <div id="presenter" hidden>
+    <header><b>Something on AI</b> · presenter view <span id="pv-clock"></span></header>
+    <div class="pv-grid">
+      <div class="pv-now"><small>NOW · <span id="pv-i"></span></small><h2 id="pv-name"></h2><div id="pv-notes"></div></div>
+      <div class="pv-side">
+        <div class="pv-timer"><small>ELAPSED</small><b id="pv-t">00:00</b><button id="pv-reset">reset</button></div>
+        <div class="pv-next"><small>NEXT</small><p id="pv-next"></p></div>
+        <div class="pv-btns"><button id="pv-prev">← back</button><button id="pv-go">next →</button></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

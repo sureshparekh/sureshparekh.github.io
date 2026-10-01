@@ -17,6 +17,7 @@
     "vite": "^8.3.2"
   },
   "dependencies": {
+    "gsap": "^3.13.0",
     "pdfjs-dist": "^6.3.289",
     "three": "^0.186.1"
   }
