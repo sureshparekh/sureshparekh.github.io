@@ -327,12 +327,6 @@ kbd { font: 500 18px var(--mono); border: 1px solid var(--line); border-radius: 
 .tweet-card.end { left: 460px; top: 230px; width: 1000px; }
 .thanks { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
 .thanks .mega { font-size: 190px; }
-/* same halo the home page puts behind its title */
-.intro-wrap::before, .thanks::before {
-  content: ""; position: absolute; z-index: -1; left: 50%; top: 50%; width: 1500px; height: 640px; transform: translate(-50%, -50%);
-  background: radial-gradient(closest-side, rgba(6,7,11,.72), rgba(6,7,11,.32) 60%, transparent); pointer-events: none;
-}
-.intro-wrap, .thanks { isolation: isolate; }
 .intro-wrap .mega, .thanks .mega { text-shadow: 0 2px 40px rgba(6,7,11,.55); }
 .byline span { color: var(--text); text-shadow: 0 1px 18px rgba(6,7,11,.8); }
 
