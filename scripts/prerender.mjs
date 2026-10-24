@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { PROFILE, LINKS, RESEARCH, PUBLICATIONS, TIMELINE, PAGES, SITE, TOPICS, FAQ } from "../src/content.js";
 import { FIELDS } from "../src/three/fields.js";
+import { cvHTML } from "../src/cv-data.js";
 
 const DIST = new URL("../dist/", import.meta.url);
 const base = readFileSync(new URL("index.html", DIST), "utf8");
@@ -11,7 +12,7 @@ const PROFILES = ["github", "scholar", "orcid", "ads"].map(href);
 
 const person = {
   "@type": "Person", "@id": `${SITE.url}/#person`, name: PROFILE.name, givenName: "Suresh", familyName: "Parekh",
-  url: `${SITE.url}/`, image: SITE.image, email: "mailto:suresh.parekh@ufrgs.br", jobTitle: "PhD student in Astrophysics",
+  url: `${SITE.url}/`, image: SITE.image, email: "mailto:suresh.parekh@ufrgs.br", jobTitle: "PhD candidate in Astrophysics",
   description: PROFILE.bio.slice(0, 2).join(" "),
   affiliation: { "@type": "CollegeOrUniversity", name: "Universidade Federal do Rio Grande do Sul", alternateName: "UFRGS", url: "https://www.ufrgs.br" },
   alumniOf: [{ "@type": "CollegeOrUniversity", name: "Savitribai Phule Pune University" }, { "@type": "CollegeOrUniversity", name: "St. Xavier's College, Ahmedabad" }],
@@ -59,6 +60,7 @@ const nav = `<nav><a href="/">Home</a> | <a href="/explore/">Interactive AGN sim
 const contacts = `<ul>${LINKS.map(l => `<li><a href="${esc(l.href)}">${esc(l.label)}</a>: ${esc(l.value)}</li>`).join("")}</ul>`;
 const faqHtml = `<h2>Questions about AGN and this simulation</h2>${FAQ.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}`;
 const groups = [...new Set(FIELDS.map(f => f.group))];
+const cvDoc = cvHTML();
 const BODY = {
   "/": `<h1>${esc(PAGES["/"].h1)}</h1><p>${esc(PROFILE.hero)}</p>
     <h2>About Suresh Parekh</h2>${PROFILE.bio.map(p => `<p>${esc(p)}</p>`).join("")}
@@ -74,7 +76,7 @@ const BODY = {
     <h2>Academic path</h2><ul>${TIMELINE.map(t => `<li>${esc(t.when)}: ${esc(t.what)}, ${esc(t.where)}</li>`).join("")}</ul>`,
   "/cv/": `<h1>${esc(PAGES["/cv/"].h1)}</h1><p>Curriculum vitae of ${esc(PROFILE.name)}, ${esc(PROFILE.role)} at ${esc(PROFILE.affiliation)}.</p>
     <p><a href="/cv.pdf">Download the CV as PDF</a></p>
-    <h2>Academic path</h2><ul>${TIMELINE.map(t => `<li>${esc(t.when)}: ${esc(t.what)}, ${esc(t.where)}</li>`).join("")}</ul>`,
+    ${cvDoc.main}${cvDoc.pubs}`,
 };
 
 function render(path, { noindex = false } = {}) {

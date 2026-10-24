@@ -1,10 +1,10 @@
 export const PROFILE = {
   name: "Suresh Parekh",
-  role: "PhD student in astrophysics",
+  role: "PhD candidate in astrophysics",
   affiliation: "UFRGS, Porto Alegre, Brazil",
   hero: "Spatially resolved stellar and nebular spectroscopy of a simulated Seyfert galaxy.",
   bio: [
-    "I'm a PhD student in astrophysics at UFRGS in Porto Alegre, Brazil, working on active galaxies and the stars around their nuclei.",
+    "I'm a PhD candidate in astrophysics at UFRGS in Porto Alegre, Brazil, working on active galaxies and the stars around their nuclei.",
     "I'm developing BRAIN, our stellar population fitting code for spectra and IFU datacubes, and I'm building other tools for spectral fitting in the optical and near-infrared.",
     "Before Brazil I worked on radio halos in galaxy clusters, observational cosmology and pulsar timing, at NRAO, GLA University and IUCAA.",
     "Away from the science I just like coding. Most of it ends up as slightly crazy simulations built for fun, and the galaxy at the top of this page is one of them.",
@@ -32,32 +32,53 @@ export const RESEARCH = [
     id: "lrd",
     kicker: "JWST",
     title: "Little Red Dots",
-    body: "Spectral fitting of JWST spectra of Little Red Dots with a starburst, a black hole star and an AGN component. The fits suggest an evolutionary sequence from a black hole star to a typical AGN.",
-    meta: "Storchi-Bergmann et al., in preparation",
+    body: "Multi-component spectral synthesis of stacked JWST/NIRSpec PRISM spectra of 78 Little Red Dots, with a starburst, a black hole star and an AGN component and four stellar population libraries. The fits support an evolutionary sequence from a black hole star to a typical AGN.",
+    meta: "Storchi-Bergmann et al., ApJ, under review",
     links: [{ label: "lrd-fitter", href: "https://github.com/sureshparekh/LRD-fitting" }],
+  },
+  {
+    id: "globular-clusters",
+    kicker: "Near-infrared",
+    title: "Globular clusters in the near-infrared",
+    body: "Full spectral fitting of SOAR/TripleSpec4 spectra of 31 globular clusters in Centaurus A with six stellar population libraries, cross-validated with optical indices. The ages differ by 3 to 5 Gyr between libraries, a direct test of near-infrared stellar population models.",
+    meta: "First author, LIBERTY collaboration. Parekh et al., MNRAS, under review",
+    links: [],
+  },
+  {
+    id: "bah",
+    kicker: "JWST IFU",
+    title: "Blowing Star Formation Away in AGN Hosts",
+    body: "Stellar population fits of JWST/NIRSpec IFU datacubes of nearby AGN, revealing recent circumnuclear star formation and central drops in stellar metallicity. I am a co-author of Paper V and lead the follow-up study.",
+    meta: "Riffel et al. 2026, ApJ, 1005, 168",
+    links: [{ label: "Paper V", href: "https://doi.org/10.3847/1538-4357/ae7bf5" }],
   },
   {
     id: "earlier",
     kicker: "Earlier work",
     title: "Radio, X-ray and cosmology",
-    body: "Radio halos and relics in galaxy clusters (NRAO), power-law cosmology with OHD, BAO and Pantheon data (GLA University), and Vela pulsar timing and X-ray to radio offsets (IUCAA).",
-    meta: "2021 to 2025",
+    body: "Radio halos and relics in galaxy clusters (NRAO), cosmology in modified gravity with Bayesian MCMC, neural networks and simulation-based inference on H(z), BAO and Pantheon data (GLA University, 13 refereed papers), Vela pulsar timing (IUCAA) and X-ray to radio offsets in quasars with Chandra (M.Sc. thesis).",
+    meta: "2021 to present",
     links: [],
   },
 ];
 
 export const PUBLICATIONS = [
-  { title: "Evolution in the UV-optical spectra of the Little Red Dots", authors: "T. Storchi-Bergmann, R. Riffel, B. L. de Castro Araújo, S. Parekh, et al.", venue: "In preparation", href: null },
-  { title: "A power law solution for FLRW Universe with observational constraints", authors: "L. Sharma, S. Parekh, S. Maurya, K. Singh, S. Ray, et al.", venue: "arXiv:2310.18665", href: "https://arxiv.org/abs/2310.18665" },
-  { title: "A power law solution for Bianchi-I Universe with observational constraints", authors: "L. Sharma, S. Parekh, S. Ray, A. Yadav, et al.", venue: "arXiv:2402.13596", href: "https://arxiv.org/abs/2402.13596" },
-  { title: "Modified power law cosmology: theoretical scenarios and observational constraints", authors: "L. Sharma, S. Parekh, S. Ray, A. Yadav, et al.", venue: "IJGMMP, under review", href: null },
+  { title: "Extragalactic globular cluster near-infrared spectroscopy: III. Stellar population synthesis models through the GC system of NGC 5128", authors: "S. Parekh, R. Riffel, A. L. Chies Santos, R. S. de Souza, et al.", venue: "MNRAS, under review", href: null },
+  { title: "Evolution in the UV-optical spectra of the Little Red Dots", authors: "T. Storchi-Bergmann, R. Riffel, B. L. de Castro Araújo, S. Parekh, et al.", venue: "ApJ, under review", href: null },
+  { title: "BRAIN: a GPU-accelerated framework for full spectral fitting of spectra and integral field datacubes", authors: "S. Parekh, R. Riffel, R. S. de Souza, et al.", venue: "In preparation", href: "https://sureshparekh.github.io/braindoc/" },
+  { title: "Blowing Star Formation Away in AGN Hosts. V. The Feeding-Feedback Cycle in Local AGN as Revealed by their Stellar Populations", authors: "R. Riffel, R. A. Riffel, G. L. Souza-Oliveira, N. L. Zakamska, T. Storchi-Bergmann, et al., incl. S. Parekh", venue: "ApJ 1005, 168 (2026)", href: "https://doi.org/10.3847/1538-4357/ae7bf5" },
+  { title: "Perturbation-level predictions of power-law f(Q) gravity from simulation-based inference", authors: "L. K. Sharma, S. Parekh", venue: "MPLA, in press (2026)", href: "https://doi.org/10.1142/S0217732326502603" },
+  { title: "Bayesian vs deep learning: parameter constraints for an anisotropic universe in f(Q) gravity", authors: "L. K. Sharma, S. Parekh, L. A. Al-Essa, E. E. Zotos", venue: "Annals of Physics 494, 170632 (2026)", href: "https://doi.org/10.1016/j.aop.2026.170632" },
+  { title: "Modified power law cosmology: theoretical scenarios and observational constraints", authors: "L. K. Sharma, S. Parekh, S. Ray, A. K. Yadav, M. Khlopov, K. C. K. Mehta", venue: "Chinese Physics C 49, 045102 (2025)", href: "https://doi.org/10.1088/1674-1137/adaa57" },
+  { title: "A power law solution for FLRW universe with observational constraints", authors: "L. K. Sharma, S. Parekh, S. Maurya, K. Singh, S. Ray, et al.", venue: "MPLA 39, 2450185 (2024)", href: "https://doi.org/10.1142/S0217732324501852" },
 ];
 
 export const TIMELINE = [
-  { when: "2025-", what: "PhD in Astrophysics", where: "UFRGS, Brazil" },
-  { when: "2023-2025", what: "Research assistant, galaxy clusters", where: "NRAO, USA" },
-  { when: "2023-2024", what: "Research assistant, cosmology", where: "GLA University, India" },
-  { when: "2022-2023", what: "Research assistant, pulsars and X-ray", where: "IUCAA, India" },
+  { when: "2025-", what: "PhD in Physics (Astrophysics)", where: "UFRGS, Brazil" },
+  { when: "2025-", what: "Observer, 200+ hours on the SOAR 4.1 m telescope", where: "Cerro Pachón, Chile" },
+  { when: "2023-", what: "Research collaborator, cosmology", where: "GLA University, India" },
+  { when: "2023-2024", what: "Research intern, galaxy clusters", where: "NRAO, USA" },
+  { when: "2022-2023", what: "Research intern, Vela pulsar timing", where: "IUCAA, India" },
   { when: "2021-2023", what: "M.Sc. Physics", where: "Savitribai Phule Pune University" },
   { when: "2018-2021", what: "B.Sc. Physics", where: "St. Xavier's College, Ahmedabad" },
 ];
@@ -70,7 +91,7 @@ export const SITE = {
 export const PAGES = {
   "/": {
     title: "Suresh Parekh | Astrophysics, AGN and spectral fitting",
-    description: "Suresh Parekh, PhD student in astrophysics at UFRGS. Spectral analysis of active galactic nuclei, the BRAIN stellar population fitting code, and an interactive 3D simulation of a Seyfert galaxy.",
+    description: "Suresh Parekh, PhD candidate in astrophysics at UFRGS. Spectral analysis of active galactic nuclei, the BRAIN stellar population fitting code, and an interactive 3D simulation of a Seyfert galaxy.",
     h1: "Spectral Analysis of an AGN",
   },
   "/explore/": {
@@ -84,8 +105,8 @@ export const PAGES = {
     h1: "Tools for reading galaxies from their spectra",
   },
   "/cv/": {
-    title: "CV | Suresh Parekh, PhD student in astrophysics (UFRGS)",
-    description: "Curriculum vitae of Suresh Parekh, PhD student in astrophysics at UFRGS, Porto Alegre, Brazil: education, research experience and publications.",
+    title: "CV | Suresh Parekh, PhD candidate in astrophysics (UFRGS)",
+    description: "Curriculum vitae of Suresh Parekh, PhD candidate in astrophysics at UFRGS, Porto Alegre, Brazil: education, research experience and publications.",
     h1: "Curriculum vitae",
   },
 };
@@ -116,5 +137,5 @@ export const FAQ = [
   ["What is BRAIN?",
     "BRAIN is a stellar population fitting code for spectra and IFU datacubes, developed by Suresh Parekh at UFRGS. It recovers star-formation histories, metallicities, dust and emission-line properties."],
   ["Who is Suresh Parekh?",
-    "Suresh Parekh is a PhD student in astrophysics at the Universidade Federal do Rio Grande do Sul (UFRGS) in Porto Alegre, Brazil. He works on active galaxies and develops tools for spectral fitting in the optical and near-infrared."],
+    "Suresh Parekh is a PhD candidate in astrophysics at the Universidade Federal do Rio Grande do Sul (UFRGS) in Porto Alegre, Brazil. He works on active galaxies and develops tools for spectral fitting in the optical and near-infrared."],
 ];
