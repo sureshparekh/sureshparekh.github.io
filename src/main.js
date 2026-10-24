@@ -6,6 +6,7 @@ import { homePage } from "./pages/home.js";
 import { explorePage } from "./pages/explore.js";
 import { researchPage } from "./pages/research.js";
 import { cvPage } from "./pages/cv.js";
+import { initLiquidGlass } from "./ui/liquid.js";
 import { PAGES, SITE } from "./content.js";
 
 const ROUTES = [
@@ -114,4 +115,5 @@ export const stageAnchor = document.getElementById("stage-anchor");
 export { backdrop };
 document.fonts?.ready.then(() => moveLens(currentPath));
 view.querySelector(".ssr")?.remove();
+initLiquidGlass();
 go();

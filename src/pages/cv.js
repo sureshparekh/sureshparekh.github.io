@@ -18,8 +18,8 @@ export function cvPage() {
       </div>
     </section>
     <section class="wrap cv-pages" aria-label="Curriculum vitae">
-      <div class="cv-doc">${main}</div>
-      <div class="cv-doc">${pubs}</div>
+      <div class="cv-doc glass">${main}</div>
+      <div class="cv-doc glass">${pubs}</div>
     </section>
     <footer class="wrap footer"><span>© ${new Date().getFullYear()} ${PROFILE.name}</span><span><a href="/">Home</a></span></footer>`;
 
