@@ -1181,8 +1181,8 @@ brainsp gui</pre></div>
     let auto = null;
     sl.addEventListener("input", () => { clearTimeout(auto); if (a) cancelAnimationFrame(a); draw(+sl.value); });
     function sweep(from, to, dur) { if (a) cancelAnimationFrame(a); const t0 = performance.now(); const tk = t => { const k = Math.min(1, (t - t0) / dur), v = lerp(from, to, ease(k)); sl.value = v; draw(v); if (k < 1) a = requestAnimationFrame(tk); }; a = requestAnimationFrame(tk); }
-    // after 3.5 s on the slide the slider moves by itself, slowly, from 10 Myr to 12 Gyr; touching it stops that
-    hooks["f-ssp"] = { enter() { sl.value = PRINT ? 9.6 : 7; draw(+sl.value); clearTimeout(auto); if (!PRINT) auto = setTimeout(() => sweep(7, 10.1, 20000), 3500); },
+    // on landing, the slider moves by itself, slowly, from 10 Myr to 12 Gyr; touching it stops that
+    hooks["f-ssp"] = { enter() { sl.value = PRINT ? 9.6 : 7; draw(+sl.value); clearTimeout(auto); if (!PRINT) auto = setTimeout(() => sweep(7, 10.1, 16000), 0); },
                        leave() { clearTimeout(auto); a && cancelAnimationFrame(a); } };
     draw(9.6);
   })();
