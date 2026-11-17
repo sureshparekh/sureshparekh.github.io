@@ -559,7 +559,7 @@ body:hover #help { opacity: .7; }
 </section>
 
 <!-- ============================================================ 3 mixing -->
-<section class="frame" id="f-mix" data-ch="intro" data-notes="[0:55, 35 s] Full spectral fitting means finding the recipe: how much of each ingredient reproduces the galaxy. Here, young, intermediate and old stars. You can try by hand; it is not easy. Press the button and the computer finds the mixture. The recipe tells us when the stars formed, what they are made of, how much dust there is and how they move. Each group computes its own ingredients: a library of SSP models.">
+<section class="frame" id="f-mix" data-ch="intro" data-notes="[0:55, 35 s] Full spectral fitting means finding the recipe: how much of each ingredient reproduces the galaxy. Here, young, intermediate and old stars. You can try by hand; it is not easy. Press the button and the computer finds the mixture. The recipe tells us when the stars formed. Each group computes its own ingredients: a library of SSP models.">
   <p class="eyebrow enter grad g-light">Part 1 · The method</p>
   <h2 class="enter d1">Fitting = finding the recipe</h2>
   <figure class="enter d2"><svg id="mixplot" viewBox="0 0 1240 640" width="100%" height="500"></svg></figure>
@@ -572,14 +572,13 @@ body:hover #help { opacity: .7; }
     <div class="col enter d4" style="flex:1; gap:16px; justify-content:center">
       <div style="display:flex; align-items:center; gap:14px"><span class="small" style="font-weight:700; color:var(--ink)">Match</span><div class="meter grow"><i id="mixmeter"></i></div><span id="mixscore" style="font-size:30px;font-weight:700;width:86px;text-align:right">0%</span></div>
       <div style="display:flex; gap:12px"><button class="btn" id="mixfit">Let the computer fit</button><button class="btn ghost" id="mixreset">Reset</button></div>
-      <p data-step="2" style="font-size:25px">The recipe gives <b>ages</b>, <b>chemistry</b>, <b>dust</b> and <b>motions</b>.</p>
     </div>
   </div>
   <span data-step="1" hidden></span>
 </section>
 
 <!-- ============================================================ 4 model lab -->
-<section class="frame" id="f-lab" data-ch="intro" data-notes="[1:30, 45 s] A real galaxy spectrum has more ingredients than stars. This is a live model; it plays by itself. The black line is a simulated galaxy. Age changes the whole shape, chemistry deepens the absorption lines, dust makes the light redder, the motions of the stars shift and broaden the lines. That is BRAIN's first mode, spop. Then the gas: emission lines, mode espop. And the glow of the ionised gas itself, the nebular continuum, mode nespop. BRAIN fits all of them together.">
+<section class="frame" id="f-lab" data-ch="intro" data-notes="[1:30, 45 s] A real galaxy spectrum has more ingredients than stars. This is a live model; it plays by itself. The black line is a simulated galaxy. Age changes the whole shape, metallicity deepens the absorption lines, dust makes the light redder, the motions of the stars shift and broaden the lines. That is BRAIN's first mode, spop. Then the gas: emission lines, mode espop. And the glow of the ionised gas itself, the nebular continuum, mode nespop. BRAIN fits all of them together.">
   <p class="eyebrow enter grad g-light">Part 1 · The ingredients</p>
   <h2 class="enter d1">What is inside a galaxy spectrum</h2>
   <svg id="labplot" class="enter d2" viewBox="0 0 1060 560" width="100%" height="420"></svg>
@@ -591,7 +590,7 @@ body:hover #help { opacity: .7; }
   <div class="row" style="gap:26px">
     <div class="card enter d3 labgrid" id="labctl">
       <div class="slider-row lab"><span class="nm">Age</span><input type="range" data-p="age" min="7" max="10.1" step="0.01" value="9.6" style="--c:#F07A1B"><output></output></div>
-      <div class="slider-row lab"><span class="nm">Chemistry</span><input type="range" data-p="z" min="0" max="3" step="0.01" value="2" style="--c:#2F6BFF"><output></output></div>
+      <div class="slider-row lab"><span class="nm">Metallicity</span><input type="range" data-p="z" min="0" max="3" step="0.01" value="2" style="--c:#2F6BFF"><output></output></div>
       <div class="slider-row lab"><span class="nm">Dust</span><input type="range" data-p="av" min="0" max="2" step="0.01" value="0" style="--c:#8E6C4E"><output></output></div>
       <div class="slider-row lab"><span class="nm">Velocity</span><input type="range" data-p="vel" min="-600" max="600" step="1" value="0" style="--c:#00A27F"><output></output></div>
       <div class="slider-row lab"><span class="nm">Dispersion</span><input type="range" data-p="sig" min="0" max="350" step="1" value="60" style="--c:#00A27F"><output></output></div>
@@ -1664,7 +1663,7 @@ brainsp gui</pre></div>
     }
     const TEXT = ["Move any slider: the spectrum is rebuilt live.",
       "<b>Age</b>: young populations are blue, old ones red, with deeper metal lines.",
-      "<b>Chemistry</b>: more metals, deeper absorption lines.",
+      "<b>Metallicity</b>: more metals, deeper absorption lines.",
       "<b>Dust</b>: dims the blue more than the red.",
       "<b>Kinematics</b>: the velocity <b>shifts</b> the lines (Doppler), the dispersion <b>broadens</b> them. See the zoom. <b>spop</b> fits all this.",
       "<b>Emission lines</b>: bright lines from ionised gas. <b>espop</b>.",
