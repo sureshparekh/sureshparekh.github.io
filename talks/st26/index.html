@@ -458,7 +458,7 @@ body.print #f-reveal .reveal img, body.print #f-reveal .reveal .bigname, body.pr
 #f-hw .hw-name { font-size: 26px; font-weight: 700; color: var(--ink); margin: 6px 0 0; }
 #f-hw .hw-sub { font-size: 20px; margin: 0; text-align: center; }
 #f-hw .hw-bars { --max: 1; margin-top: 18px; display: flex; flex-direction: column; gap: 10px; }
-#f-hw.s2 .hw-bars { --max: 70; }
+#f-hw.s2 .hw-bars { --max: 560; }
 #f-hw .hw-lab { font-size: 18px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--grey); margin: 0; }
 #f-hw .hw-row { display: grid; grid-template-columns: 170px 1fr 170px; align-items: center; gap: 16px; font-size: 22px; }
 #f-hw .hw-row span { font-weight: 600; color: var(--ink-2); }
@@ -494,8 +494,9 @@ body.print #f-reveal .reveal img, body.print #f-reveal .reveal .bigname, body.pr
 #f-hw .hw-bars { margin-top: 14px; gap: 8px; }
 #f-hw .hw-cluster { margin-top: 12px; }
 #f-hw .hw-cluster { grid-template-columns: 500px 1fr; margin-top: 14px; }
-#f-hw .hw-grid { grid-template-columns: repeat(18, 1fr); gap: 4px; }
-#f-hw .hw-card { width: 84px; height: 84px; font-size: 20px; }
+#f-hw .hw-grid { grid-template-columns: repeat(50, 1fr); gap: 1.5px; }
+#f-hw .hw-grid i { border-radius: 1.5px; }
+#f-hw .hw-card { width: 84px; height: 84px; font-size: 18px; line-height: 1.1; text-align: center; }
 #f-hw .hw-why { margin: 0; padding-left: 22px; font-size: 20px; line-height: 1.38; color: var(--grey); display: flex; flex-direction: column; gap: 4px; }
 #f-hw .hw-why b { color: var(--ink); }
 #f-hw .hw-manga { display: grid; grid-template-columns: 250px 1fr 1fr 1fr; gap: 14px; align-items: stretch; margin-top: 14px; }
@@ -745,7 +746,7 @@ body.print #f-reveal .reveal img, body.print #f-reveal .reveal .bigname, body.pr
   </div>
 </section>
 
-<section class="frame" id="f-hw" data-ch="brain" data-click="1" data-notes="[6:35, 65 s] Why? BRAIN does its arithmetic in 64-bit, because neighbouring templates are almost identical. Our Threadripper has 32 cores and 64 threads, and every core does 64-bit math at full speed. The RTX 3060 is a gaming card: 3584 cores, but only 56 of them do 64-bit math. (Press.) So in 64-bit our CPU has almost four times the power: 0.75 against 0.2 teraflops. (Press.) Now the H100, the GPU our university is getting: one card, 8448 cores that do 64-bit math and tensor cores that do it too: 67 teraflops. Our two bars almost disappear. (Press.) One box has the 64-bit power of about 90 workstations like ours, some 2900 CPU cores. And it beats a cluster of them: all its cores share one 80 GB memory, so nothing has to travel over a network between machines, and there is no job queue. (Press.) What it means: the 10,000 MaNGA cubes took more than three months before. BRAIN on our whole workstation, all 64 threads and the GPU together: about two weeks. On one H100, if the time follows the 64-bit rate: within a day. So yes: the more you buy, the faster it gets.">
+<section class="frame" id="f-hw" data-ch="brain" data-click="1" data-notes="[6:35, 65 s] Why? BRAIN does its arithmetic in 64-bit, because neighbouring templates are almost identical. Our Threadripper has 32 cores and 64 threads, and every core does 64-bit math at full speed. The RTX 3060 is a gaming card: 3584 cores, but only 56 of them do 64-bit math. (Press.) So in 64-bit our CPU has almost four times the power: 0.75 against 0.2 teraflops. (Press.) Now the DGX H100, the machine our university is getting: one box with eight H100 GPUs, 67,584 cores that do 64-bit math, and tensor cores that do it too: 535 teraflops. Our two bars almost disappear. (Press.) One box has the 64-bit power of about 700 workstations like ours, some 22,000 CPU cores. And it beats a cluster of them: its eight GPUs are joined inside the box by NVLink, with 640 GB of GPU memory, so nothing has to travel over a network between machines, and there is no job queue. (Press.) What it means: the 10,000 MaNGA cubes took more than three months before. BRAIN on our whole workstation, all 64 threads and the GPU together: about two weeks. On the DGX H100, if the time follows the 64-bit rate: under two hours. So yes: the more you buy, the faster it gets.">
   <p class="eyebrow enter c-brain">Part 3 · Why?</p>
   <h2 class="enter d1">It is the 64-bit math</h2>
   <div class="hw-chips enter d2">
@@ -754,25 +755,25 @@ body.print #f-reveal .reveal img, body.print #f-reveal .reveal .bigname, body.pr
     <div class="hw-chip"><svg id="hwgpu" viewBox="0 0 560 290"></svg>
       <p class="hw-name">RTX 3060 <small>gaming</small></p><p class="hw-sub">3,584 cores<br><b class="c-gpu">only 56 do 64-bit math</b></p></div>
     <div class="hw-chip hw-chip-h100"><svg id="hwh100" viewBox="0 0 560 290"></svg>
-      <p class="hw-name">H100 <small>coming to UFRGS</small></p><p class="hw-sub">16,896 cores · <b class="c-h100">8,448 do 64-bit math</b><br>+ 528 tensor cores, also in 64-bit</p></div>
+      <p class="hw-name">DGX H100 <small>coming to UFRGS</small></p><p class="hw-sub">8 H100 GPUs · 135,168 cores<br><b class="c-h100">67,584 do 64-bit math</b> + 4,224 tensor cores</p></div>
   </div>
   <div class="hw-bars" data-step="1">
     <p class="hw-lab">64-bit speed · trillion operations per second</p>
     <div class="hw-row"><span>Threadripper</span><div class="hw-track"><i class="b-cpu" style="--v:.75"></i></div><b>0.75 <small>TFLOPS</small></b></div>
     <div class="hw-row"><span>RTX 3060</span><div class="hw-track"><i class="b-gpu" style="--v:.2"></i></div><b>0.2 <small>TFLOPS</small></b></div>
-    <div class="hw-row hw-h100"><span>H100</span><div class="hw-track"><i class="b-h100" style="--v:67"></i></div><b>67 <small>TFLOPS</small></b></div>
+    <div class="hw-row hw-h100"><span>DGX H100</span><div class="hw-track"><i class="b-h100" style="--v:535"></i></div><b>535 <small>TFLOPS</small></b></div>
   </div>
   <div class="hw-cluster" data-step="3">
-    <div class="hw-eq"><div class="hw-card">H100</div><span>≈</span><div class="hw-grid" id="hwgrid"></div></div>
+    <div class="hw-eq"><div class="hw-card">DGX<br>H100</div><span>≈</span><div class="hw-grid" id="hwgrid"></div></div>
     <ul class="hw-why">
-      <li><b>One box ≈ 90 workstations like ours</b></li>
+      <li><b>One box ≈ 700 workstations like ours</b></li>
     </ul>
   </div>
   <div class="hw-manga" data-step="4">
     <p class="hw-mt">10,000 MaNGA cubes in espop</p>
     <div class="hw-mc"><span>Before<br>&nbsp;</span><b>&gt; 3 months</b></div>
     <div class="hw-mc"><span>BRAIN<br>our workstation</span><b class="c-cpu">≈ 2 weeks</b></div>
-    <div class="hw-mc"><span>BRAIN<br>one H100</span><b class="c-h100">&lt; 1 day</b></div>
+    <div class="hw-mc"><span>BRAIN<br>one DGX H100</span><b class="c-h100">&lt; 2 hours</b></div>
   </div>
   <span data-step="2" hidden></span>
 </section>
@@ -2106,17 +2107,18 @@ brainsp gui</pre></div>
       for (let q = 0; q < 128; q++) el("circle", { cx: x0 + 5 + (q % 16) * 3.6, cy: y0 + 6 + Math.floor(q / 16) * 5.2, r: 1.1, fill: "#9AA1AB" }, gpu);
       [[x0 + 22, y0 + 50], [x0 + 42, y0 + 50]].forEach(([cx, cy]) => el("circle", { cx, cy, r: 4.2, fill: "#E8590C" }, gpu));
     }
-    // H100 (SXM): 132 streaming multiprocessors; in each, 64 of the 128 cores do 64-bit math, plus 4 tensor cores
+    // DGX H100: eight H100 SXM GPUs; each drawn as a die of 132 streaming multiprocessors (64-bit units green)
     const h = $("#hwh100");
     el("rect", { x: 20, y: 10, width: 520, height: 270, rx: 18, fill: "#fff", stroke: "#C9CED6", "stroke-width": 2 }, h);
-    for (let m = 0; m < 132; m++) {
-      const x0 = 32 + (m % 12) * 41.5, y0 = 22 + Math.floor(m / 12) * 22.8;
-      el("rect", { x: x0, y: y0, width: 38, height: 20, rx: 3, fill: "#F4F5F7", stroke: "#DADDE2", "stroke-width": .6 }, h);
-      for (let q = 0; q < 16; q++) el("circle", { cx: x0 + 3.5 + (q % 8) * 2.9, cy: y0 + 4 + Math.floor(q / 8) * 3, r: .9, fill: "#9AA1AB" }, h);
-      for (let q = 0; q < 16; q++) el("circle", { cx: x0 + 3.5 + (q % 8) * 2.9, cy: y0 + 11 + Math.floor(q / 8) * 3, r: 1.1, fill: "#2B8A3E" }, h);
-      for (let q = 0; q < 4; q++) el("rect", { x: x0 + 27.5 + (q % 2) * 4.6, y: y0 + 4 + Math.floor(q / 2) * 6.4, width: 3.8, height: 5.2, rx: .8, fill: "#1F6E31" }, h);
+    for (let g = 0; g < 8; g++) {
+      const gx = 34 + (g % 4) * 125, gy = 24 + Math.floor(g / 4) * 128;
+      el("rect", { x: gx, y: gy, width: 117, height: 116, rx: 7, fill: "#F4F5F7", stroke: "#DADDE2" }, h);
+      for (let m = 0; m < 132; m++) {
+        const x0 = gx + 6 + (m % 12) * 8.8, y0 = gy + 6 + Math.floor(m / 12) * 9.6;
+        el("rect", { x: x0, y: y0, width: 7.2, height: 8, rx: 1, fill: m % 2 ? "#2B8A3E" : "#1F6E31", opacity: m % 2 ? .75 : 1 }, h);
+      }
     }
-    const grid = $("#hwgrid"); for (let i = 0; i < 90; i++) { const b = document.createElement("i"); b.style.animationDelay = `${(i * 0.012).toFixed(3)}s`; grid.append(b); }
+    const grid = $("#hwgrid"); for (let i = 0; i < 700; i++) { const b = document.createElement("i"); b.style.animationDelay = `${(i * 0.0025).toFixed(4)}s`; grid.append(b); }
     hooks["f-hw"] = { steps: 4, step(st, f) { f.classList.toggle("s2", st >= 2); f.querySelector(".hw-cluster").classList.toggle("on", st >= 3); },
                       leave(f) { f.classList.remove("s2"); f.querySelector(".hw-cluster").classList.remove("on"); } };
     if (PRINT) $("#f-hw").classList.add("s2");
