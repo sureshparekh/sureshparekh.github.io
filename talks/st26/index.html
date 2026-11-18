@@ -681,7 +681,7 @@ body.print #f-reveal .reveal img, body.print #f-reveal .reveal .bigname, body.pr
 </section>
 
 <!-- ============================================================ 9 how it fits -->
-<section class="frame" id="f-how" data-ch="brain" data-notes="[4:40, 40 s] How does BRAIN fit? It starts from a guess of the few non-linear parameters: the dust, and the velocity and dispersion of stars and gas. For those, the weights of all the templates and the fluxes of all the lines enter the model linearly, so they are solved exactly, by non-negative least squares. The model is compared with the data, weighted by the errors: the chi-squared. Then the non-linear parameters are updated by Levenberg-Marquardt, with exact derivatives from JAX. And around again, until chi-squared converges. No random sampling: the same input always gives the same answer, on CPU and GPU alike.">
+<section class="frame" id="f-how" data-ch="brain" data-notes="[4:40, 40 s] How does BRAIN fit? It starts from a guess of the few non-linear parameters: the dust, and the velocity and dispersion of stars and gas. For those, the weights of all the templates and the fluxes of all the lines enter the model linearly, so they are solved exactly, by non-negative least squares. The model is compared with the data, weighted by the errors: the chi-squared. Then the non-linear parameters are updated by Levenberg-Marquardt, with exact derivatives from JAX. And around again, until chi-squared converges.">
   <p class="eyebrow enter c-brain">Part 3 · How BRAIN fits</p>
   <h2 class="enter d1">Exact where it can be, fast where it must be</h2>
   <div class="row fill" style="gap:30px; align-items:center">
@@ -690,7 +690,6 @@ body.print #f-reveal .reveal img, body.print #f-reveal .reveal .bigname, body.pr
       <div class="lesson" data-step="1"><span class="tag" style="background:#0071E3">linear</span><p>Template weights and line fluxes: solved <b>exactly</b> by non-negative least squares</p></div>
       <div class="lesson" data-step="2"><span class="tag" style="background:#00A27F">non-linear</span><p>Dust and kinematics: <b>Levenberg–Marquardt</b> with an exact Jacobian</p></div>
       <div class="lesson" data-step="3"><span class="tag" style="background:#F07A1B">JAX</span><p>One code compiled for <b>CPU and GPU</b>: results agree to <b>10<sup>−5</sup></b></p></div>
-      <div class="lesson" data-step="4"><span class="tag" style="background:#6A3FD8">deterministic</span><p>No random sampling: the same input gives <b>the same result</b></p></div>
     </div>
   </div>
 </section>
